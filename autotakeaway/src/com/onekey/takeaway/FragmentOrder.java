@@ -9,6 +9,8 @@ import mythware.common.LogUtils;
 import mythware.http.CloudUpdateVersionServer.CloudInterface;
 import mythware.http.CloudUpdateVersionServer.CloudResponseStatus;
 import android.app.Fragment;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -338,6 +340,11 @@ public class FragmentOrder extends Fragment {
 				holder.tvs[4].setText(bean.getPay() + "");
 				holder.tvs[5].setText(Common.getDoorCodeCustom(bean.getDoorId()) );
 				holder.tvs[6].setText(bean.getState());
+				if (bean.getStateInt() == 2 || bean.getStateInt() == 5) {
+					holder.tvs[6].setTextColor(Color.RED);
+				} else {
+					holder.tvs[6].setTextColor(Color.WHITE);
+				}
 				holder.tvs[7].setText(bean.getGenTime());
 			}
 

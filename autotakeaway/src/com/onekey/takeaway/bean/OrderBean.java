@@ -93,18 +93,18 @@ public class OrderBean extends MsgBean{
 			
 		}
 				
-		public InnerOrderBean(String custom, int deviceType, String xiaocai,
-				String tang, String doorId, int state, String food, String pay,
-				String deviceId) {
-			super();
-			this.custom = custom;
-			this.devType = deviceType;
-			this.doorId = doorId;
-			this.state = state;
-			this.foodName = food;
-			this.pay = pay;
-			this.devId = deviceId;
-		}
+//		public InnerOrderBean(String custom, int deviceType, String xiaocai,
+//				String tang, String doorId, int state, String food, String pay,
+//				String deviceId) {
+//			super();
+//			this.custom = custom;
+//			this.devType = deviceType;
+//			this.doorId = doorId;
+//			this.state = state;
+//			this.foodName = food;
+//			this.pay = pay;
+//			this.devId = deviceId;
+//		}
 
 		public String getCustom() {
 			return custom;
@@ -121,6 +121,10 @@ public class OrderBean extends MsgBean{
 
 		public void setDoorId(String doorId) {
 			this.doorId = doorId;
+		}
+		
+		public int getStateInt() {
+			return state;
 		}
 
 		public String getState() {

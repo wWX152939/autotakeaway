@@ -37,7 +37,7 @@ public class FragmentCount extends Fragment {
 		return fragmentCommon;
 	}
 	
-	void loadData() {
+	void loadData(boolean bottomLoad) {
 		String lastOrderId = "";
 		if (mDataListAdapter.getDataShowList().size() != 0) {
 			lastOrderId = mDataListAdapter.getDataShowList().get(mDataListAdapter.getDataShowList().size() -1).getOrderId() + "";
@@ -55,7 +55,7 @@ public class FragmentCount extends Fragment {
 				}
 				mAbPullToRefreshView.onFooterLoadFinish();
 			}
-		}, "");
+		}, bottomLoad ? lastOrderId : "");
 	}
 	
 	@Override
@@ -115,7 +115,7 @@ public class FragmentCount extends Fragment {
 			
 			@Override
 			public void onFooterLoad(AbPullToRefreshView arg0) {
-				loadData();
+				loadData(true);
 			}
 		});
 		
@@ -154,7 +154,7 @@ public class FragmentCount extends Fragment {
 			mTv2.setText(ShopBean.getInfo());
 		}
 		
-		loadData();
+		loadData(false);
 		return view;
 	}
 }
