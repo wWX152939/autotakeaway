@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="40dp"
+	android:background="@android:color/holo_blue_light"
+	android:orientation="horizontal" >
+	<TextView 
+	    android:id="@+id/tv1"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		style="@style/textViewOrder"
+		android:text="@string/order_number"
+		 />
+	<TextView 
+	    android:id="@+id/tv11"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		android:text="@string/pay_time"
+		style="@style/textViewOrder" />
+	
+	<TextView 
+	    android:id="@+id/tv2"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		android:text="@string/custom"
+		style="@style/textViewOrder" />
+	<TextView 
+	    android:id="@+id/tv3"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		style="@style/textViewOrder"
+		android:text="@string/food_name"
+		 />
+	
+	<TextView 
+	    android:id="@+id/tv4"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		style="@style/textViewOrder"
+		android:text="@string/pay"
+		
+		 />
+</LinearLayout>

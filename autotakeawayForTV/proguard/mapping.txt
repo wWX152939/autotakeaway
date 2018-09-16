@@ -1,0 +1,1789 @@
+com.onekey.common.ByteBufferHelper -> com.onekey.a.a:
+    java.lang.String defaultEncoding -> a
+    java.lang.String getBytesAsString(java.nio.ByteBuffer,int) -> a
+    java.lang.String getBytesAsString(java.nio.ByteBuffer,int,java.lang.String) -> a
+com.onekey.common.Common -> com.onekey.a.b:
+    int DelayTime -> a
+    java.text.DecimalFormat df -> b
+    android.util.DisplayMetrics s_Metric -> c
+    void showWindow(android.view.Window,android.view.View) -> a
+    void showWindow(android.widget.PopupWindow,int,android.view.View,android.view.Window) -> a
+com.onekey.common.Complex -> com.onekey.a.c:
+    double re -> a
+    double im -> b
+    java.lang.String toString() -> toString
+    com.onekey.common.Complex times(com.onekey.common.Complex) -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.onekey.common.CrashHandler -> com.onekey.a.d:
+    java.lang.Thread$UncaughtExceptionHandler mDefaultHandler -> a
+    com.onekey.common.CrashHandler INSTANCE -> b
+    android.content.Context mContext -> c
+    java.util.Map infos -> d
+    java.text.DateFormat formatter -> e
+    com.onekey.common.CrashHandler getInstance() -> a
+    void init(android.content.Context) -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    void collectDeviceInfo(android.content.Context) -> b
+    java.lang.String saveCrashInfo2File(java.lang.Throwable) -> a
+    android.content.Context access$0(com.onekey.common.CrashHandler) -> a
+    java.lang.String access$1(com.onekey.common.CrashHandler) -> b
+com.onekey.common.CrashHandler$1 -> com.onekey.a.e:
+    com.onekey.common.CrashHandler this$0 -> a
+    void run() -> run
+com.onekey.common.DataCallback -> com.onekey.a.f:
+    void callback(byte[]) -> a
+    void onConnected() -> a
+    void onDisconnected() -> b
+com.onekey.common.FFT -> com.onekey.a.g:
+    int imageViewSelIcon -> a
+    int imageViewUnSelIcon -> b
+    java.lang.String textViewText -> c
+    android.app.Fragment mFragment -> d
+    com.onekey.common.Complex[] fft(com.onekey.common.Complex[]) -> a
+    int getImageViewSelIcon() -> a
+    int getImageViewUnSelIcon() -> b
+    java.lang.String getTextViewText() -> c
+    android.app.Fragment getmFragment() -> d
+    int dp2px(android.content.Context,float) -> a
+    byte[] stringToData(java.lang.String,java.lang.String) -> a
+    java.lang.String dataToString(byte[],java.lang.String) -> a
+    boolean validateRegex(java.lang.String,java.lang.String) -> b
+    void curve3(android.graphics.PointF,android.graphics.PointF,android.graphics.PointF,android.graphics.PointF,android.graphics.PointF[]) -> a
+    int dip2px(android.content.Context,float) -> b
+    android.graphics.PointF center(android.graphics.PointF,android.graphics.PointF) -> a
+    float distance(android.graphics.PointF,android.graphics.PointF) -> b
+    android.graphics.PointF translate(android.graphics.PointF,float,float) -> a
+    android.graphics.PointF percent(android.graphics.PointF,float,android.graphics.PointF,float) -> a
+com.onekey.common.LogUtils -> com.onekey.a.h:
+    java.lang.String customTagPrefix -> a
+    boolean allowD -> b
+    boolean allowI -> c
+    boolean allowW -> d
+    java.lang.String TAG -> e
+    java.lang.String generateTag(java.lang.StackTraceElement) -> a
+    void d(java.lang.String) -> a
+    void i(java.lang.String) -> b
+    void w(java.lang.String) -> c
+    java.lang.StackTraceElement getCallerStackTraceElement() -> a
+com.onekey.common.TwoTuple -> com.onekey.a.i:
+    java.lang.Object first -> a
+    java.lang.Object second -> b
+    java.lang.String toString() -> toString
+com.onekey.hc8000.FragmentNet -> com.onekey.hc8000.a:
+    android.widget.LinearLayout mLl1 -> b
+    android.widget.LinearLayout mLl2 -> c
+    android.widget.TextView mTvClear -> d
+    android.widget.TextView mTv11 -> e
+    android.widget.TextView mTv12 -> f
+    android.widget.TextView mTv13 -> g
+    android.widget.TextView mTv14 -> h
+    android.widget.TextView mTv15 -> i
+    android.widget.TextView mTv16 -> j
+    android.widget.TextView mTv17 -> k
+    android.widget.TextView mTv18 -> l
+    android.widget.TextView mTv19 -> m
+    android.widget.TextView mTv110 -> n
+    android.widget.TextView mTv111 -> o
+    android.widget.TextView mTv112 -> p
+    android.widget.TextView mTv113 -> q
+    android.widget.TextView mTv114 -> r
+    android.widget.TextView mTv21 -> s
+    android.widget.TextView mTv22 -> t
+    android.widget.TextView mTv23 -> u
+    android.widget.TextView mTv24 -> v
+    android.widget.TextView mTv25 -> w
+    android.widget.TextView mTv26 -> x
+    android.widget.TextView mTv27 -> y
+    android.widget.TextView mTv28 -> z
+    android.widget.TextView mTv29 -> A
+    android.widget.TextView mTv210 -> B
+    android.widget.TextView mTv211 -> C
+    android.widget.TextView mTv212 -> D
+    android.widget.TextView mTv213 -> E
+    android.widget.TextView mTv214 -> F
+    android.widget.TextView mTv215 -> G
+    android.widget.TextView mTv216 -> H
+    android.widget.TextView mTv217 -> I
+    android.widget.TextView mTv218 -> J
+    android.widget.TextView mTv219 -> K
+    android.widget.TextView mTv220 -> L
+    java.lang.String mStartCmd -> a
+    java.lang.String mStopCmd -> M
+    android.os.Handler mHandler -> N
+    int countId -> O
+    com.onekey.hc8000.FragmentNet newInstance(java.lang.String) -> a
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void setText(android.widget.TextView,java.lang.Object) -> a
+    android.widget.TextView addView(android.view.LayoutInflater,android.view.ViewGroup,int) -> a
+    void onHiddenChanged(boolean) -> onHiddenChanged
+    void access$0(com.onekey.hc8000.FragmentNet,com.onekey.hc8000.bean.NetInfoBean) -> a
+com.onekey.hc8000.FragmentNet$1 -> com.onekey.hc8000.b:
+    com.onekey.hc8000.FragmentNet this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.onekey.hc8000.FragmentNet access$0(com.onekey.hc8000.FragmentNet$1) -> a
+com.onekey.hc8000.FragmentNet$1$1 -> com.onekey.hc8000.c:
+    com.onekey.hc8000.FragmentNet$1 this$1 -> a
+    void callback(byte[]) -> a
+    void onConnected() -> a
+    void onDisconnected() -> b
+com.onekey.hc8000.FragmentNet$2 -> com.onekey.hc8000.d:
+    com.onekey.hc8000.FragmentNet this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal -> com.onekey.hc8000.e:
+    android.widget.LinearLayout mImageView -> a
+    android.widget.TextView mTextViewStar -> b
+    android.widget.TextView mTextViewPP -> c
+    android.widget.TextView mTextViewClose -> d
+    android.widget.TextView mTextView1 -> j
+    android.widget.TextView mTextView2 -> k
+    android.widget.TextView mTextView3 -> l
+    android.widget.TextView mTextView4 -> m
+    android.widget.TextView mSaveBtn -> n
+    java.lang.String mStartCmd -> e
+    java.lang.String mStopCmd -> f
+    java.lang.String mStartXZCmd -> g
+    java.lang.String mStopXZCmd -> h
+    java.lang.String mCurrentCmd -> o
+    byte[] mSignalBeanData -> i
+    com.onekey.hc8000.bean.SignalBean mSignalBean -> p
+    com.onekey.hc8000.bean.SignalSetBean mSignalSetBean -> q
+    com.onekey.hc8000.bean.SignalSetBean mSignalSetBeanOld -> r
+    android.os.Handler mHandler -> s
+    com.onekey.hc8000.ux.SplineChart01View mViewPP -> t
+    com.onekey.hc8000.ux.ScatterChart01View mViewXZ -> u
+    android.view.LayoutInflater mLayoutInflater -> v
+    android.app.Activity mActivity -> w
+    android.widget.PopupWindow mPop -> x
+    com.onekey.hc8000.FragmentSignal newInstance(java.lang.String) -> a
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void onHiddenChanged(boolean) -> onHiddenChanged
+    void onClick(android.view.View) -> onClick
+    java.lang.String access$0(com.onekey.hc8000.FragmentSignal) -> a
+    com.onekey.hc8000.bean.SignalBean access$1(com.onekey.hc8000.FragmentSignal) -> b
+    com.onekey.hc8000.ux.SplineChart01View access$2(com.onekey.hc8000.FragmentSignal) -> c
+    com.onekey.hc8000.ux.ScatterChart01View access$3(com.onekey.hc8000.FragmentSignal) -> d
+    void access$4(com.onekey.hc8000.FragmentSignal,com.onekey.hc8000.ux.ScatterChart01View) -> a
+    void access$5(com.onekey.hc8000.FragmentSignal,java.lang.String) -> a
+    void access$6(com.onekey.hc8000.FragmentSignal,com.onekey.hc8000.ux.SplineChart01View) -> a
+    com.onekey.hc8000.bean.SignalSetBean access$7(com.onekey.hc8000.FragmentSignal) -> e
+    com.onekey.hc8000.bean.SignalSetBean access$8(com.onekey.hc8000.FragmentSignal) -> f
+    android.widget.PopupWindow access$9(com.onekey.hc8000.FragmentSignal) -> g
+    void access$10(com.onekey.hc8000.FragmentSignal,android.widget.TextView,android.widget.TextView,int) -> a
+    void access$11(com.onekey.hc8000.FragmentSignal,char,java.lang.String) -> a
+    void access$12(com.onekey.hc8000.FragmentSignal,com.onekey.hc8000.bean.SignalSetBean) -> a
+    void access$13(com.onekey.hc8000.FragmentSignal,com.onekey.hc8000.bean.SignalSetBean) -> b
+com.onekey.hc8000.FragmentSignal$1 -> com.onekey.hc8000.f:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.onekey.hc8000.FragmentSignal access$0(com.onekey.hc8000.FragmentSignal$1) -> a
+com.onekey.hc8000.FragmentSignal$1$1 -> com.onekey.hc8000.g:
+    com.onekey.hc8000.FragmentSignal$1 this$1 -> a
+    void callback(byte[]) -> a
+    void onConnected() -> a
+    void onDisconnected() -> b
+com.onekey.hc8000.FragmentSignal$10 -> com.onekey.hc8000.h:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    android.widget.TextView val$tv2 -> b
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.onekey.hc8000.FragmentSignal$11 -> com.onekey.hc8000.i:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$12 -> com.onekey.hc8000.j:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    com.onekey.hc8000.ux.AbsDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$13 -> com.onekey.hc8000.k:
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$14 -> com.onekey.hc8000.l:
+    com.onekey.hc8000.ux.AbsDialog val$dialog -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$2 -> com.onekey.hc8000.m:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$3 -> com.onekey.hc8000.n:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$4 -> com.onekey.hc8000.o:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$5 -> com.onekey.hc8000.p:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    android.widget.TextView val$tv -> b
+    int val$type -> c
+    android.widget.TextView val$tv2 -> d
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.onekey.hc8000.FragmentSignal$6 -> com.onekey.hc8000.q:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    android.widget.ImageView val$tv7 -> b
+    android.widget.TextView val$tv2 -> c
+    android.widget.TextView val$tv4 -> d
+    android.widget.TextView val$tv5 -> e
+    android.widget.TextView val$tv6 -> f
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$7 -> com.onekey.hc8000.r:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$8 -> com.onekey.hc8000.s:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    com.onekey.hc8000.ux.AbsDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentSignal$9 -> com.onekey.hc8000.t:
+    com.onekey.hc8000.FragmentSignal this$0 -> a
+    android.widget.TextView val$tv1 -> b
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.onekey.hc8000.FragmentState -> com.onekey.hc8000.u:
+    android.widget.LinearLayout mLlParent -> b
+    android.widget.LinearLayout mLl1 -> c
+    android.widget.LinearLayout mLl2 -> d
+    android.widget.LinearLayout mLl3 -> e
+    android.widget.LinearLayout mLl4 -> f
+    android.widget.TextView mTv4 -> g
+    android.widget.TextView mTv11 -> h
+    android.widget.TextView mTv12 -> i
+    android.widget.TextView mTv13 -> j
+    android.widget.TextView mTv14 -> k
+    android.widget.TextView mTv21 -> l
+    android.widget.TextView mTv22 -> m
+    android.widget.TextView mTv23 -> n
+    android.widget.TextView mTv24 -> o
+    android.widget.TextView mTv31 -> p
+    android.widget.TextView mTv32 -> q
+    android.widget.TextView mTv33 -> r
+    android.widget.TextView mTv34 -> s
+    android.widget.TextView mTv35 -> t
+    android.widget.TextView mTv36 -> u
+    android.widget.TextView mTv41 -> v
+    android.widget.TextView mTv42 -> w
+    android.widget.TextView mTv43 -> x
+    android.widget.TextView mTv44 -> y
+    android.widget.TextView mTv45 -> z
+    android.widget.TextView mTv46 -> A
+    java.lang.String mStartCmd -> a
+    java.lang.String mStopCmd -> B
+    com.onekey.hc8000.bean.StatusBean mStatusBean -> C
+    android.app.Activity mActivity -> D
+    android.location.Location mLocation -> E
+    android.os.Handler mHandler -> F
+    android.location.LocationListener mLocationListener -> G
+    com.onekey.hc8000.FragmentState newInstance(java.lang.String) -> a
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void setText(android.widget.TextView,java.lang.Object) -> a
+    void setTag(android.widget.TextView) -> a
+    void onHiddenChanged(boolean) -> onHiddenChanged
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    com.onekey.hc8000.bean.StatusBean access$0(com.onekey.hc8000.FragmentState) -> a
+    void access$1(com.onekey.hc8000.FragmentState,com.onekey.hc8000.bean.StatusBean) -> a
+    void access$2(com.onekey.hc8000.FragmentState,android.location.Location) -> a
+    void access$3(com.onekey.hc8000.FragmentState) -> b
+    android.location.Location access$4(com.onekey.hc8000.FragmentState) -> c
+    android.app.Activity access$5(com.onekey.hc8000.FragmentState) -> d
+com.onekey.hc8000.FragmentState$1 -> com.onekey.hc8000.v:
+    com.onekey.hc8000.FragmentState this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.onekey.hc8000.FragmentState access$0(com.onekey.hc8000.FragmentState$1) -> a
+com.onekey.hc8000.FragmentState$1$1 -> com.onekey.hc8000.w:
+    com.onekey.hc8000.FragmentState$1 this$1 -> a
+    void callback(byte[]) -> a
+    void onConnected() -> a
+    void onDisconnected() -> b
+com.onekey.hc8000.FragmentState$2 -> com.onekey.hc8000.x:
+    com.onekey.hc8000.FragmentState this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+com.onekey.hc8000.FragmentState$3 -> com.onekey.hc8000.y:
+    com.onekey.hc8000.FragmentState this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentState$4 -> com.onekey.hc8000.z:
+    com.onekey.hc8000.FragmentState this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.onekey.hc8000.FragmentState$5 -> com.onekey.hc8000.A:
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.onekey.hc8000.FragmentState$6 -> com.onekey.hc8000.B:
+    com.onekey.hc8000.FragmentState this$0 -> a
+    android.widget.EditText val$tv1 -> b
+    boolean onClick() -> a
+com.onekey.hc8000.FragmentState$7 -> com.onekey.hc8000.C:
+    android.widget.EditText val$tv1 -> a
+    android.widget.TextView val$tv3 -> b
+    android.widget.EditText val$tv4 -> c
+    android.widget.EditText val$tv5 -> d
+    android.widget.EditText val$tv6 -> e
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.FragmentState$8 -> com.onekey.hc8000.D:
+    com.onekey.hc8000.ux.AbsDialog val$dialog -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.LoginActivity -> com.onekey.hc8000.LoginActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.onekey.hc8000.LoginActivity$1 -> com.onekey.hc8000.E:
+    com.onekey.hc8000.LoginActivity this$0 -> a
+    android.widget.EditText val$editText1 -> b
+    android.widget.EditText val$editText2 -> c
+    void onClick(android.view.View) -> onClick
+    com.onekey.hc8000.LoginActivity access$0(com.onekey.hc8000.LoginActivity$1) -> a
+com.onekey.hc8000.LoginActivity$1$1 -> com.onekey.hc8000.F:
+    com.onekey.hc8000.LoginActivity$1 this$1 -> a
+    android.widget.EditText val$editText1 -> b
+    android.widget.EditText val$editText2 -> c
+    void onDisconnected() -> b
+    void onConnected() -> a
+    void callback(byte[]) -> a
+com.onekey.hc8000.MainActivity -> com.onekey.hc8000.MainActivity:
+    com.onekey.hc8000.tabview.TabView tabView -> a
+    java.lang.String tab1 -> b
+    java.lang.String tab2 -> c
+    java.lang.String tab3 -> d
+    android.widget.TextView mTextView -> e
+    com.onekey.hc8000.FragmentState mFragmentState -> f
+    android.os.Handler mHandler -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    android.widget.TextView access$0(com.onekey.hc8000.MainActivity) -> a
+com.onekey.hc8000.MainActivity$1 -> com.onekey.hc8000.G:
+    void handleMessage(android.os.Message) -> handleMessage
+com.onekey.hc8000.MainActivity$2 -> com.onekey.hc8000.H:
+    com.onekey.hc8000.MainActivity this$0 -> a
+    void onTabChildClick$1d35a924(int) -> a
+com.onekey.hc8000.R$styleable -> com.onekey.hc8000.I:
+    int[] TabView -> a
+com.onekey.hc8000.SocketHelper -> com.onekey.hc8000.J:
+    com.onekey.hc8000.SocketHelper mInstance -> a
+    int mDisconnectCount -> f
+    boolean mIsAutoConnect -> b
+    java.util.List mCallbackList -> c
+    android.os.Handler mHandler -> d
+    void registerDataCallback(com.onekey.common.DataCallback) -> a
+    void clearDataCallback() -> a
+    com.onekey.hc8000.SocketHelper getInstance() -> b
+    void login(java.lang.String,java.lang.String) -> a
+    byte[] byteMerger(byte[],byte[]) -> a
+    byte[] strTo8ByteArray(java.lang.String) -> a
+    byte[] strToByteArray(java.lang.String,int) -> a
+    int access$0() -> c
+    void access$1(int) -> a
+com.onekey.hc8000.SocketHelper$1 -> com.onekey.hc8000.K:
+    void handleMessage(android.os.Message) -> handleMessage
+com.onekey.hc8000.SocketHelper$2 -> com.onekey.hc8000.L:
+    void onConnected$219992d8() -> a
+    void onDisconnected$219992d8() -> b
+    void onResponse$1bc80ba(com.vilyever.socketclient.helper.SocketResponsePacket) -> a
+com.onekey.hc8000.bean.NetInfoBean -> com.onekey.hc8000.a.a:
+    java.lang.String type -> a
+    int ethn_version1 -> b
+    int ethn_version2 -> c
+    int rx_buffer_size -> d
+    int tx_buffer_size -> e
+    int local_loopback_enable -> f
+    int loop_data_enable_override -> g
+    int xon_threshold -> h
+    int xoff_threshold -> i
+    int xoff_rerequeset_timer -> j
+    int pause_quanta -> k
+    int rx_packets_detected -> l
+    int rx_packets_dropped -> m
+    int tx_packets_detected -> n
+    int tx_packets_dropped -> o
+    int mac_version1 -> p
+    int mac_version2 -> q
+    int jumbo_frame_enable1 -> r
+    int jumbo_frame_enable2 -> s
+    int vlan_enable1 -> t
+    int vlan_enable2 -> u
+    int rx_flow_control_enable -> v
+    int tx_flow_control_enable -> w
+    int max_frame_enable1 -> x
+    int max_frame_enable2 -> y
+    int max_frame_size1 -> z
+    int max_frame_size2 -> A
+    int rx_bytes -> B
+    int rx_good_frames -> C
+    int rx_crc_errors -> D
+    int rx_length_errors -> E
+    int rx_pause_frames -> F
+    int tx_bytes -> G
+    int tx_good_frames -> H
+    int tx_urun_errors -> I
+    int tx_pause_frames -> J
+    java.lang.String toString() -> toString
+com.onekey.hc8000.bean.SignalBean -> com.onekey.hc8000.a.b:
+    java.lang.String type -> a
+    int[] buf -> b
+    java.lang.String ip -> r
+    java.lang.String mac -> s
+    java.lang.String uptime -> t
+    java.lang.String date -> u
+    java.lang.String name -> v
+    float longitude -> w
+    float atitude -> x
+    float TLevel -> y
+    float rTHR -> z
+    float sTHR -> c
+    int version -> A
+    int bert_uncoded -> d
+    int bert_coded -> e
+    int mse_avg -> B
+    int Code_rate_s -> f
+    int Code_rate_r -> C
+    int Disto_AMAM -> g
+    int Disto_AMAP -> h
+    int NBWidth_r -> D
+    int NBWidth_s -> i
+    int QAM_r -> E
+    int QAM_s -> j
+    int Ilv_depth_r -> F
+    int Ilv_depth_s -> k
+    int digital_loopback -> l
+    int data_source -> m
+    int stack_p -> G
+    int DA_data -> n
+    int WB_data_AD -> o
+    int WB_data_WB -> p
+    int XZTYPE -> q
+    java.util.List spectrumAverageList -> H
+    java.lang.String toString() -> toString
+    com.onekey.common.TwoTuple getXZData(int[]) -> a
+    double[] spi_fft(int[]) -> b
+    void read(java.nio.ByteBuffer) -> a
+com.onekey.hc8000.bean.SignalSetBean -> com.onekey.hc8000.a.c:
+    java.lang.String modulation -> a
+    java.lang.String bandwidth -> b
+    java.lang.String dataSource -> c
+    java.lang.String codeRatio -> d
+    java.lang.String interLeaverDepth -> e
+    java.lang.String digitalLoopback -> f
+    java.lang.String DAData -> g
+    java.lang.String ADData -> h
+    java.lang.String[] mDepth1 -> i
+    java.lang.String[] mDepth2 -> j
+    java.lang.String[] mDepth5 -> k
+    java.lang.String[] mChannel1 -> l
+    java.lang.String[] mChannel2 -> m
+    java.lang.String[] mChannel3 -> n
+    java.lang.String[] mCodeRatio -> o
+    java.lang.String[] mModulation -> p
+    java.lang.String[] mBandWidth -> q
+    java.lang.String[] mDataSource -> r
+    java.util.HashMap mMapModulation -> s
+    java.util.HashMap mMapBandWidth -> t
+    java.util.HashMap mMapDataSource -> u
+    java.util.HashMap mMapCodeRadio -> v
+    com.onekey.hc8000.bean.SignalSetBean clone() -> a
+    void setModulation(java.lang.String) -> a
+    void setBandwidth(java.lang.String) -> b
+    void setChannel(java.lang.String) -> c
+    void setDataSource(java.lang.String) -> d
+    void setCodeRatio(java.lang.String) -> e
+    void setInterLeaverDepth(java.lang.String) -> f
+    void setDigitalLoopback(java.lang.String) -> g
+    void setDAData(java.lang.String) -> h
+    void setADData(java.lang.String) -> i
+    java.lang.String getKey(java.util.HashMap,java.lang.String) -> a
+    java.lang.Object clone() -> clone
+com.onekey.hc8000.bean.SignalSetBean$1 -> com.onekey.hc8000.a.d:
+com.onekey.hc8000.bean.SignalSetBean$2 -> com.onekey.hc8000.a.e:
+com.onekey.hc8000.bean.SignalSetBean$3 -> com.onekey.hc8000.a.f:
+com.onekey.hc8000.bean.SignalSetBean$4 -> com.onekey.hc8000.a.g:
+com.onekey.hc8000.bean.StatusBean -> com.onekey.hc8000.a.h:
+    java.lang.String type -> a
+    java.lang.String ip -> b
+    java.lang.String mac -> c
+    java.lang.String uptime -> d
+    java.lang.String date -> e
+    java.lang.String name -> f
+    float longitude -> g
+    float atitude -> h
+    float TLevel -> i
+    float rTHR -> j
+    float sTHR -> k
+    int version -> l
+    int bert_uncoded -> m
+    int bert_coded -> n
+    int mse_avg -> o
+    int Code_rate_s -> p
+    int Code_rate_r -> q
+    int Disto_AMAM -> r
+    int Disto_AMAP -> s
+    int NBWidth_r -> t
+    int NBWidth_s -> u
+    int QAM_r -> v
+    int QAM_s -> w
+    int Ilv_depth_r -> x
+    int Ilv_depth_s -> y
+    int digital_loopback -> z
+    int data_source -> A
+    int stack_p -> B
+    int DA_data -> C
+    int WB_data_AD -> D
+    int WB_data_WB -> E
+    java.lang.String toString() -> toString
+    int revertCodeRate(int) -> a
+com.onekey.hc8000.tabview.TabView -> com.onekey.hc8000.tabview.TabView:
+    int mTextViewSelColor -> a
+    int mTextViewUnSelColor -> b
+    int mTabViewBackgroundColor -> c
+    int mTabViewHeight -> d
+    int mImageViewTextViewMargin -> e
+    int mTextViewSize -> f
+    int mImageViewWidth -> g
+    int mImageViewHeight -> h
+    java.util.List mTabViewChildList -> i
+    int mTabViewGravity -> j
+    int mTabViewDefaultPosition -> k
+    android.widget.LinearLayout tabview -> l
+    java.util.List unselectedIconList -> m
+    android.widget.FrameLayout mFragmentContainer -> n
+    android.app.FragmentManager mSupportFragmentManager -> o
+    android.app.Fragment[] mFragments -> p
+    int index -> q
+    int currentTabIndex -> r
+    com.onekey.hc8000.tabview.TabView$OnTabChildClickListener listener -> s
+    void initCustomAttrs(android.content.Context,android.util.AttributeSet) -> a
+    void setTabViewChild(java.util.List,android.app.FragmentManager) -> a
+    void setTabViewDefaultPosition(int) -> a
+    void setOnTabChildClickListener(com.onekey.hc8000.tabview.TabView$OnTabChildClickListener) -> a
+    void setTextViewSelectedColor(int) -> b
+    void access$0(com.onekey.hc8000.tabview.TabView) -> a
+    int access$1(com.onekey.hc8000.tabview.TabView) -> b
+    void access$2(com.onekey.hc8000.tabview.TabView,int) -> a
+    void access$3(com.onekey.hc8000.tabview.TabView) -> c
+    com.onekey.hc8000.tabview.TabView$OnTabChildClickListener access$4(com.onekey.hc8000.tabview.TabView) -> d
+com.onekey.hc8000.tabview.TabView$1 -> com.onekey.hc8000.tabview.a:
+    com.onekey.hc8000.tabview.TabView this$0 -> a
+    android.widget.ImageView val$imageview -> b
+    com.onekey.common.FFT val$t$5beb6784 -> c
+    android.widget.TextView val$textview -> d
+    int val$currentPosition -> e
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.tabview.TabView$OnTabChildClickListener -> com.onekey.hc8000.tabview.b:
+    void onTabChildClick$1d35a924(int) -> a
+com.onekey.hc8000.ux.AbsDialog -> com.onekey.hc8000.b.a:
+    void show() -> show
+    void show(com.onekey.hc8000.ux.AbsDialogView) -> a
+com.onekey.hc8000.ux.AbsDialogView -> com.onekey.hc8000.b.b:
+    android.content.Context mContext -> g
+    android.view.ViewGroup mRootView -> a
+    android.widget.TextView mConfirmBtn -> h
+    android.widget.TextView mCancelBtn -> i
+    android.widget.TextView mTitleBtn -> j
+    android.widget.LinearLayout mLlParent -> k
+    android.view.View$OnClickListener mConfirmListener -> b
+    android.view.View$OnClickListener mCancelListener -> l
+    com.onekey.hc8000.ux.AbsDialogView$ConfirmCheckListener mConfirmCheckListener -> c
+    android.view.View mCustomView -> m
+    java.lang.String mCustomTitle -> n
+    int mColorId -> o
+    com.onekey.hc8000.ux.AbsDialogView$ViewType mViewType -> d
+    android.app.Dialog mDialog -> e
+    android.widget.PopupWindow mPopupWindow -> f
+    int[] $SWITCH_TABLE$com$onekey$hc8000$ux$AbsDialogView$ViewType -> p
+    android.view.ViewGroup getParentView() -> a
+    android.view.ViewGroup getRootView() -> b
+    com.onekey.hc8000.ux.AbsDialogView setOnConfirmCheckListener(com.onekey.hc8000.ux.AbsDialogView$ConfirmCheckListener) -> a
+    com.onekey.hc8000.ux.AbsDialogView setOnClickListener(android.view.View$OnClickListener,android.view.View$OnClickListener) -> a
+    com.onekey.hc8000.ux.AbsDialogView setTitle(java.lang.String) -> a
+    com.onekey.hc8000.ux.AbsDialogView setView(android.view.View) -> a
+    void confirmDismiss() -> c
+    void initView(android.app.Dialog) -> a
+    int[] $SWITCH_TABLE$com$onekey$hc8000$ux$AbsDialogView$ViewType() -> d
+com.onekey.hc8000.ux.AbsDialogView$1 -> com.onekey.hc8000.b.c:
+    com.onekey.hc8000.ux.AbsDialogView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.ux.AbsDialogView$2 -> com.onekey.hc8000.b.d:
+    com.onekey.hc8000.ux.AbsDialogView$ViewType val$type -> a
+    android.app.Dialog val$dialog -> b
+    android.widget.PopupWindow val$popupWindow -> c
+    int[] $SWITCH_TABLE$com$onekey$hc8000$ux$AbsDialogView$ViewType -> d
+    void onMultiClick$3c7ec8c3() -> a
+    int[] $SWITCH_TABLE$com$onekey$hc8000$ux$AbsDialogView$ViewType() -> b
+com.onekey.hc8000.ux.AbsDialogView$ConfirmCheckListener -> com.onekey.hc8000.b.e:
+    boolean onClick() -> a
+com.onekey.hc8000.ux.AbsDialogView$ViewType -> com.onekey.hc8000.b.f:
+    com.onekey.hc8000.ux.AbsDialogView$ViewType Dialog -> a
+    com.onekey.hc8000.ux.AbsDialogView$ViewType PopupWindow -> b
+    com.onekey.hc8000.ux.AbsDialogView$ViewType[] ENUM$VALUES -> c
+    com.onekey.hc8000.ux.AbsDialogView$ViewType[] values() -> a
+com.onekey.hc8000.ux.AbsDialogViewAutoDismiss -> com.onekey.hc8000.b.g:
+    void confirmDismiss() -> c
+com.onekey.hc8000.ux.DemoView -> com.onekey.hc8000.b.h:
+    int[] getBarLnDefaultSpadding() -> a
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+com.onekey.hc8000.ux.OnMultiClickListener$OnClick -> com.onekey.hc8000.b.i:
+    void onMultiClick$3c7ec8c3() -> a
+    void onClick(android.view.View) -> onClick
+com.onekey.hc8000.ux.ScatterChart01View -> com.onekey.hc8000.b.j:
+    java.lang.String TAG -> a
+    org.xclcharts.chart.ScatterChart chart -> b
+    java.util.LinkedList labels -> c
+    java.util.List chartData -> d
+    double[] mShowDataX -> e
+    double[] mShowDataY -> f
+    double maxX -> g
+    double minX -> h
+    double maxY -> i
+    double minY -> j
+    void setData(com.onekey.common.TwoTuple) -> a
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void chartRender() -> b
+    void chartDataSet() -> c
+    void chartLabels() -> d
+    void render(android.graphics.Canvas) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.onekey.hc8000.ux.ScatterChart01View$1 -> com.onekey.hc8000.b.k:
+    java.lang.String textFormatter(java.lang.String) -> a
+com.onekey.hc8000.ux.SplineChart01View -> com.onekey.hc8000.b.l:
+    java.lang.String TAG -> a
+    org.xclcharts.chart.SplineChart chart -> b
+    java.util.LinkedList labels -> c
+    java.util.LinkedList chartData -> d
+    double[] mShowData -> e
+    void setData(double[]) -> a
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void chartRender() -> b
+    void chartDataSet() -> c
+    void chartLabels() -> d
+    void render(android.graphics.Canvas) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.onekey.hc8000.ux.SplineChart01View$1 -> com.onekey.hc8000.b.m:
+    java.lang.String textFormatter(java.lang.String) -> a
+com.vilyever.socketclient.LogUtils -> com.a.a.a:
+    java.lang.String customTagPrefix -> a
+    boolean allowI -> b
+    java.lang.String TAG -> c
+    void i(java.lang.String) -> a
+com.vilyever.socketclient.SocketClient -> com.a.a.b:
+    com.vilyever.socketclient.SocketClient self -> e
+    boolean mRunStatus -> a
+    com.vilyever.socketclient.helper.SocketClientAddress address -> b
+    java.lang.String charsetName -> c
+    com.vilyever.socketclient.helper.SocketPacketHelper socketPacketHelper -> d
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper heartBeatHelper -> f
+    java.net.Socket runningSocket -> g
+    com.vilyever.socketclient.helper.SocketInputReader socketInputReader -> h
+    com.vilyever.socketclient.helper.SocketConfigure socketConfigure -> i
+    com.vilyever.socketclient.SocketClient$State state -> j
+    boolean disconnecting -> k
+    java.util.concurrent.LinkedBlockingQueue sendingPacketQueue -> l
+    android.os.CountDownTimer hearBeatCountDownTimer -> m
+    long lastSendHeartBeatMessageTime -> n
+    long lastReceiveMessageTime -> o
+    long lastSendMessageTime -> p
+    com.vilyever.socketclient.helper.SocketPacket sendingPacket -> q
+    com.vilyever.socketclient.helper.SocketResponsePacket receivingResponsePacket -> r
+    long lastReceiveProgressCallbackTime -> s
+    com.vilyever.socketclient.SocketClient$ConnectionThread connectionThread -> t
+    com.vilyever.socketclient.SocketClient$DisconnectionThread disconnectionThread -> u
+    com.vilyever.socketclient.SocketClient$SendThread sendThread -> v
+    com.vilyever.socketclient.SocketClient$ReceiveThread receiveThread -> w
+    java.util.ArrayList socketClientDelegates -> x
+    java.util.ArrayList socketClientSendingDelegates -> y
+    java.util.ArrayList socketClientReceivingDelegates -> z
+    com.vilyever.socketclient.SocketClient$UIHandler uiHandler -> A
+    void connect() -> d
+    void disconnect() -> e
+    boolean isConnected() -> f
+    boolean isDisconnected() -> a
+    boolean isConnecting() -> g
+    com.vilyever.socketclient.helper.SocketPacket sendData(byte[]) -> a
+    com.vilyever.socketclient.helper.SocketPacket sendString(java.lang.String) -> b
+    com.vilyever.socketclient.helper.SocketPacket sendPacket(com.vilyever.socketclient.helper.SocketPacket) -> b
+    void setReadDataToDataThreadStop() -> h
+    void readDataToDataThread(byte[]) -> b
+    com.vilyever.socketclient.SocketClient registerSocketClientDelegate(com.vilyever.socketclient.helper.SocketClientDelegate) -> a
+    com.vilyever.socketclient.helper.SocketClientAddress getAddress() -> i
+    com.vilyever.socketclient.SocketClient setCharsetName(java.lang.String) -> c
+    com.vilyever.socketclient.helper.SocketPacketHelper getSocketPacketHelper() -> b
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper getHeartBeatHelper() -> j
+    java.net.Socket getRunningSocket() -> k
+    com.vilyever.socketclient.SocketClient setRunningSocket(java.net.Socket) -> a
+    com.vilyever.socketclient.SocketClient setSocketInputReader(com.vilyever.socketclient.helper.SocketInputReader) -> a
+    com.vilyever.socketclient.helper.SocketInputReader getSocketInputReader() -> l
+    com.vilyever.socketclient.SocketClient setSocketConfigure(com.vilyever.socketclient.helper.SocketConfigure) -> a
+    com.vilyever.socketclient.helper.SocketConfigure getSocketConfigure() -> m
+    com.vilyever.socketclient.SocketClient setState(com.vilyever.socketclient.SocketClient$State) -> a
+    com.vilyever.socketclient.SocketClient$State getState() -> c
+    com.vilyever.socketclient.SocketClient setDisconnecting(boolean) -> a
+    java.util.concurrent.LinkedBlockingQueue getSendingPacketQueue() -> n
+    com.vilyever.socketclient.SocketClient setLastSendHeartBeatMessageTime(long) -> a
+    com.vilyever.socketclient.SocketClient setLastReceiveMessageTime(long) -> b
+    com.vilyever.socketclient.SocketClient setLastSendMessageTime(long) -> c
+    com.vilyever.socketclient.SocketClient setSendingPacket(com.vilyever.socketclient.helper.SocketPacket) -> a
+    com.vilyever.socketclient.helper.SocketPacket getSendingPacket() -> o
+    com.vilyever.socketclient.SocketClient setReceivingResponsePacket(com.vilyever.socketclient.helper.SocketResponsePacket) -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket getReceivingResponsePacket() -> p
+    com.vilyever.socketclient.SocketClient setConnectionThread(com.vilyever.socketclient.SocketClient$ConnectionThread) -> a
+    com.vilyever.socketclient.SocketClient$ConnectionThread getConnectionThread() -> q
+    com.vilyever.socketclient.SocketClient setDisconnectionThread(com.vilyever.socketclient.SocketClient$DisconnectionThread) -> a
+    com.vilyever.socketclient.SocketClient setSendThread(com.vilyever.socketclient.SocketClient$SendThread) -> a
+    com.vilyever.socketclient.SocketClient$SendThread getSendThread() -> r
+    com.vilyever.socketclient.SocketClient setReceiveThread(com.vilyever.socketclient.SocketClient$ReceiveThread) -> a
+    com.vilyever.socketclient.SocketClient$ReceiveThread getReceiveThread() -> s
+    java.util.ArrayList getSocketClientDelegates() -> t
+    java.util.ArrayList getSocketClientSendingDelegates() -> u
+    java.util.ArrayList getSocketClientReceivingDelegates() -> v
+    com.vilyever.socketclient.SocketClient$UIHandler getUiHandler() -> w
+    void access$0(com.vilyever.socketclient.SocketClient) -> a
+    com.vilyever.socketclient.SocketClient$ConnectionThread access$1(com.vilyever.socketclient.SocketClient) -> b
+    com.vilyever.socketclient.SocketClient$SendThread access$2(com.vilyever.socketclient.SocketClient) -> c
+    com.vilyever.socketclient.SocketClient$ReceiveThread access$3(com.vilyever.socketclient.SocketClient) -> d
+    android.os.CountDownTimer access$4(com.vilyever.socketclient.SocketClient) -> e
+    void access$5(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketPacket) -> a
+    void access$6(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketResponsePacket) -> a
+    void access$7(com.vilyever.socketclient.SocketClient) -> f
+    void access$8(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketPacket) -> b
+    void access$9(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketPacket,int,int,int,int,int) -> a
+    void access$10(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketPacket) -> c
+    void access$11(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketResponsePacket) -> b
+    void access$12(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketResponsePacket) -> c
+    void access$13(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketResponsePacket,int,int,int,int,int) -> a
+    void access$14(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketResponsePacket) -> d
+    void access$15(com.vilyever.socketclient.SocketClient,com.vilyever.socketclient.helper.SocketPacket) -> d
+    boolean access$16(com.vilyever.socketclient.SocketClient) -> g
+    void access$17(com.vilyever.socketclient.SocketClient) -> h
+com.vilyever.socketclient.SocketClient$1 -> com.a.a.c:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketPacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$10 -> com.a.a.d:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket val$responsePacket -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$11 -> com.a.a.e:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketPacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$12 -> com.a.a.f:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketPacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$13 -> com.a.a.g:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketPacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$14 -> com.a.a.h:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketPacket val$packet -> b
+    int val$sendedLength -> c
+    int val$headerLength -> d
+    int val$packetLengthDataLength -> e
+    int val$dataLength -> f
+    int val$trailerLength -> g
+    void run() -> run
+com.vilyever.socketclient.SocketClient$15 -> com.a.a.i:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$16 -> com.a.a.j:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$17 -> com.a.a.k:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$18 -> com.a.a.l:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket val$packet -> b
+    int val$receivedLength -> c
+    int val$headerLength -> d
+    int val$packetLengthDataLength -> e
+    int val$dataLength -> f
+    int val$trailerLength -> g
+    void run() -> run
+com.vilyever.socketclient.SocketClient$5 -> com.a.a.m:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    byte[] val$data -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$6 -> com.a.a.n:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void onTick(long) -> onTick
+    void onFinish() -> onFinish
+    com.vilyever.socketclient.SocketClient access$0(com.vilyever.socketclient.SocketClient$6) -> a
+com.vilyever.socketclient.SocketClient$6$1 -> com.a.a.o:
+    com.vilyever.socketclient.SocketClient$6 this$1 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$7 -> com.a.a.p:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    com.vilyever.socketclient.helper.SocketPacket val$packet -> b
+    void run() -> run
+com.vilyever.socketclient.SocketClient$8 -> com.a.a.q:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$9 -> com.a.a.r:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$ConnectionThread -> com.a.a.s:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$DisconnectionThread -> com.a.a.t:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$ReceiveThread -> com.a.a.u:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$SendThread -> com.a.a.v:
+    com.vilyever.socketclient.SocketClient this$0 -> a
+    void run() -> run
+com.vilyever.socketclient.SocketClient$State -> com.a.a.w:
+    com.vilyever.socketclient.SocketClient$State Disconnected -> a
+    com.vilyever.socketclient.SocketClient$State Connecting -> b
+    com.vilyever.socketclient.SocketClient$State Connected -> c
+com.vilyever.socketclient.SocketClient$UIHandler -> com.a.a.x:
+    void handleMessage(android.os.Message) -> handleMessage
+com.vilyever.socketclient.helper.SocketClientAddress -> com.a.a.a.a:
+    java.lang.String remoteIP -> a
+    java.lang.String remotePort -> b
+    int connectionTimeout -> c
+    com.vilyever.socketclient.helper.SocketClientAddress copy() -> a
+    com.vilyever.socketclient.helper.SocketClientAddress setRemoteIP(java.lang.String) -> a
+    java.lang.String getRemoteIP() -> b
+    com.vilyever.socketclient.helper.SocketClientAddress setRemotePort(java.lang.String) -> b
+    java.lang.String getRemotePort() -> c
+    int getConnectionTimeout() -> d
+com.vilyever.socketclient.helper.SocketClientDelegate -> com.a.a.a.b:
+    void onConnected$219992d8() -> a
+    void onDisconnected$219992d8() -> b
+    void onResponse$1bc80ba(com.vilyever.socketclient.helper.SocketResponsePacket) -> a
+com.vilyever.socketclient.helper.SocketClientReceivingDelegate -> com.a.a.a.c:
+    boolean isReceiveHeartBeatPacket$3b2b6e4a() -> a
+    byte[] obtainSendHeartBeatData$32bdc3fd() -> b
+    int obtainReceivePacketDataLength$6696d996() -> c
+    byte[] obtainSendPacketLengthDataForPacketLength$669f6016() -> d
+com.vilyever.socketclient.helper.SocketConfigure -> com.a.a.a.d:
+    java.lang.String charsetName -> a
+    com.vilyever.socketclient.helper.SocketClientAddress address -> b
+    com.vilyever.socketclient.helper.SocketPacketHelper socketPacketHelper -> c
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper heartBeatHelper -> d
+    com.vilyever.socketclient.helper.SocketConfigure setCharsetName(java.lang.String) -> a
+    java.lang.String getCharsetName() -> a
+    com.vilyever.socketclient.helper.SocketConfigure setAddress(com.vilyever.socketclient.helper.SocketClientAddress) -> a
+    com.vilyever.socketclient.helper.SocketClientAddress getAddress() -> b
+    com.vilyever.socketclient.helper.SocketConfigure setSocketPacketHelper(com.vilyever.socketclient.helper.SocketPacketHelper) -> a
+    com.vilyever.socketclient.helper.SocketPacketHelper getSocketPacketHelper() -> c
+    com.vilyever.socketclient.helper.SocketConfigure setHeartBeatHelper(com.vilyever.socketclient.helper.SocketHeartBeatHelper) -> a
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper getHeartBeatHelper() -> d
+com.vilyever.socketclient.helper.SocketHeartBeatHelper -> com.a.a.a.e:
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper original -> a
+    byte[] defaultSendData -> b
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate sendDataBuilder$3d7775a6 -> c
+    byte[] defaultReceiveData -> d
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate receiveHeartBeatPacketChecker$65fa1adb -> e
+    long heartBeatInterval -> f
+    boolean sendHeartBeatEnabled -> g
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper copy() -> a
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper getOriginal() -> b
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper setDefaultSendData(byte[]) -> a
+    byte[] getDefaultSendData() -> c
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate getSendDataBuilder$400661a7() -> d
+    byte[] getDefaultReceiveData() -> e
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate getReceiveHeartBeatPacketChecker$77d7711c() -> f
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper setHeartBeatInterval(long) -> a
+    long getHeartBeatInterval() -> g
+    com.vilyever.socketclient.helper.SocketHeartBeatHelper setSendHeartBeatEnabled(boolean) -> a
+    boolean isSendHeartBeatEnabled() -> h
+com.vilyever.socketclient.helper.SocketInputReader -> com.a.a.a.f:
+    java.io.InputStream inputStream -> a
+    void close() -> close
+    int read(char[],int,int) -> read
+    byte[] readToLength(int) -> a
+    byte[] readToData$1cf21f7b(byte[]) -> a
+    boolean ready() -> ready
+    boolean __i__isOpen() -> a
+com.vilyever.socketclient.helper.SocketPacket -> com.a.a.a.g:
+    java.util.concurrent.atomic.AtomicInteger IDAtomic -> a
+    byte[] data -> b
+    java.lang.String message -> c
+    void buildDataWithCharsetName(java.lang.String) -> a
+    byte[] getData() -> a
+    java.lang.String getMessage() -> b
+    com.vilyever.socketclient.helper.SocketPacket setHeaderData(byte[]) -> a
+    com.vilyever.socketclient.helper.SocketPacket setPacketLengthData(byte[]) -> b
+    com.vilyever.socketclient.helper.SocketPacket setTrailerData(byte[]) -> c
+com.vilyever.socketclient.helper.SocketPacketHelper -> com.a.a.a.h:
+    com.vilyever.socketclient.helper.SocketPacketHelper original -> a
+    byte[] sendHeaderData -> b
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate sendPacketLengthDataConvertor$1a478f99 -> c
+    byte[] sendTrailerData -> d
+    int sendSegmentLength -> e
+    boolean sendSegmentEnabled -> f
+    long sendTimeout -> g
+    boolean sendTimeoutEnabled -> h
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy readStrategy -> i
+    byte[] receiveHeaderData -> j
+    int receivePacketLengthDataLength -> k
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate receivePacketDataLengthConvertor$7b7f7f8c -> l
+    byte[] receiveTrailerData -> m
+    int receiveSegmentLength -> n
+    boolean receiveSegmentEnabled -> o
+    long receiveTimeout -> p
+    boolean receiveTimeoutEnabled -> q
+    int[] $SWITCH_TABLE$com$vilyever$socketclient$helper$SocketPacketHelper$ReadStrategy -> r
+    com.vilyever.socketclient.helper.SocketPacketHelper copy() -> a
+    void checkValidation() -> b
+    com.vilyever.socketclient.helper.SocketPacketHelper getOriginal() -> c
+    byte[] getSendHeaderData() -> d
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate getSendPacketLengthDataConvertor$5f1ec8f8() -> e
+    byte[] getSendTrailerData() -> f
+    int getSendSegmentLength() -> g
+    boolean isSendSegmentEnabled() -> h
+    long getSendTimeout() -> i
+    boolean isSendTimeoutEnabled() -> j
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy getReadStrategy() -> k
+    byte[] getReceiveHeaderData() -> l
+    int getReceivePacketLengthDataLength() -> m
+    com.vilyever.socketclient.helper.SocketClientReceivingDelegate getReceivePacketDataLengthConvertor$72a32a33() -> n
+    byte[] getReceiveTrailerData() -> o
+    int getReceiveSegmentLength() -> p
+    boolean isReceiveSegmentEnabled() -> q
+    long getReceiveTimeout() -> r
+    boolean isReceiveTimeoutEnabled() -> s
+    int[] $SWITCH_TABLE$com$vilyever$socketclient$helper$SocketPacketHelper$ReadStrategy() -> t
+com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy -> com.a.a.a.i:
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy Manually -> a
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy AutoReadToTrailer -> b
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy AutoReadByLength -> c
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy[] ENUM$VALUES -> d
+    com.vilyever.socketclient.helper.SocketPacketHelper$ReadStrategy[] values() -> a
+com.vilyever.socketclient.helper.SocketResponsePacket -> com.a.a.a.j:
+    byte[] data -> a
+    java.lang.String message -> b
+    void buildStringWithCharsetName(java.lang.String) -> a
+    com.vilyever.socketclient.helper.SocketResponsePacket setData(byte[]) -> a
+    byte[] getData() -> a
+    java.lang.String getMessage() -> b
+org.xclcharts.chart.LnData -> a.a.a.a:
+    java.lang.String mLabel -> a
+    boolean mLabelVisible -> b
+    org.xclcharts.renderer.line.PlotLine mPlotLine -> c
+    org.xclcharts.renderer.XEnum$LineStyle mLineStyle -> d
+    org.xclcharts.renderer.plot.PlotLabelRender mPlotLabel -> e
+    org.xclcharts.renderer.line.PlotLine getPlotLine() -> a
+    void setLineColor(int) -> a
+    int getLineColor() -> b
+    void setDotStyle(org.xclcharts.renderer.XEnum$DotStyle) -> a
+    void setLineKey(java.lang.String) -> a
+    java.lang.String getLineKey() -> c
+    android.graphics.Paint getLinePaint() -> d
+    org.xclcharts.renderer.XEnum$LineStyle getLineStyle() -> e
+org.xclcharts.chart.PointD -> a.a.a.b:
+    double x -> a
+    double y -> b
+org.xclcharts.chart.ScatterChart -> a.a.a.c:
+    java.lang.String TAG -> l
+    java.util.List mDataset -> m
+    double mMaxValue -> n
+    double mMinValue -> o
+    org.xclcharts.common.IFormatterTextCallBack mLabelFormatter -> p
+    android.graphics.Paint mPaintPoint -> q
+    org.xclcharts.renderer.plot.PlotQuadrantRender mPlotQuadrant -> r
+    org.xclcharts.renderer.XEnum$ChartType getType() -> a
+    void categoryAxisDefaultSetting() -> b
+    void dataAxisDefaultSetting() -> c
+    void setCategories(java.util.List) -> a
+    void setDataSource(java.util.List) -> b
+    void setCategoryAxisMax(double) -> a
+    void setCategoryAxisMin(double) -> b
+    void setDotLabelFormatter(org.xclcharts.common.IFormatterTextCallBack) -> a
+    org.xclcharts.renderer.plot.PlotQuadrant getPlotQuadrant() -> H
+    android.graphics.Paint getPointPaint() -> d
+    void drawClipPlot(android.graphics.Canvas) -> a
+    void drawClipLegend(android.graphics.Canvas) -> b
+org.xclcharts.chart.ScatterData -> a.a.a.d:
+    java.lang.String mLabel -> a
+    boolean mLabelVisible -> b
+    java.util.List mPointMap -> c
+    android.graphics.Paint mLabelPaint -> d
+    org.xclcharts.renderer.line.PlotDot mPlotDot -> e
+    float mItemLabelRotateAngle -> f
+    java.util.List getDataSet() -> a
+    java.lang.String getKey() -> b
+    android.graphics.Paint getDotLabelPaint() -> c
+    org.xclcharts.renderer.line.PlotDot getPlotDot() -> d
+org.xclcharts.chart.SplineChart -> a.a.a.e:
+    java.lang.String TAG -> l
+    java.util.List mDataSet -> m
+    double mMaxValue -> n
+    double mMinValue -> o
+    org.xclcharts.common.IFormatterTextCallBack mLabelFormatter -> p
+    java.util.List mLstPoints -> q
+    android.graphics.Path mBezierPath -> r
+    java.util.List mLstKey -> s
+    java.util.List mLstDotInfo -> t
+    org.xclcharts.renderer.XEnum$CrurveLineStyle mCrurveLineStyle -> u
+    org.xclcharts.renderer.line.PlotCustomLine mXAxisCustomLine -> v
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$CrurveLineStyle -> w
+    org.xclcharts.renderer.XEnum$ChartType getType() -> a
+    void categoryAxisDefaultSetting() -> b
+    void dataAxisDefaultSetting() -> c
+    void setCategories(java.util.List) -> a
+    void setDataSource(java.util.List) -> b
+    void setCategoryAxisMax(double) -> a
+    void setCategoryAxisMin(double) -> b
+    void setDotLabelFormatter(org.xclcharts.common.IFormatterTextCallBack) -> a
+    void setCrurveLineStyle(org.xclcharts.renderer.XEnum$CrurveLineStyle) -> a
+    boolean renderLine(android.graphics.Canvas,org.xclcharts.chart.SplineData,java.util.List) -> a
+    boolean renderDotAndLabel$6708f829(android.graphics.Canvas,org.xclcharts.chart.SplineData,int) -> a
+    void drawClipPlot(android.graphics.Canvas) -> a
+    void drawClipLegend(android.graphics.Canvas) -> b
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$CrurveLineStyle() -> d
+org.xclcharts.chart.SplineData -> a.a.a.f:
+    java.util.List mLinePointMap -> a
+    float mItemLabelRotateAngle -> b
+    java.util.List getLineDataSet() -> f
+org.xclcharts.common.DrawHelper -> a.a.b.a:
+    org.xclcharts.common.DrawHelper instance -> a
+    android.graphics.RectF mRectF -> b
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LineStyle -> c
+    org.xclcharts.common.DrawHelper getInstance() -> a
+    float getPaintFontHeight(android.graphics.Paint) -> a
+    float getTextWidth(android.graphics.Paint,java.lang.String) -> a
+    void drawRotateText(java.lang.String,float,float,float,android.graphics.Canvas,android.graphics.Paint) -> a
+    android.graphics.PathEffect getDotLineStyle() -> b
+    android.graphics.PathEffect getDashLineStyle() -> c
+    void drawLine(org.xclcharts.renderer.XEnum$LineStyle,float,float,float,float,android.graphics.Canvas,android.graphics.Paint) -> a
+    float drawText(android.graphics.Canvas,android.graphics.Paint,java.lang.String,float,float) -> a
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LineStyle() -> d
+org.xclcharts.common.IFormatterTextCallBack -> a.a.b.b:
+    java.lang.String textFormatter(java.lang.String) -> a
+org.xclcharts.common.MathHelper -> a.a.b.c:
+    org.xclcharts.common.MathHelper instance -> a
+    float mPosX -> b
+    float mPosY -> c
+    android.graphics.PointF mPointF -> d
+    boolean mHighPrecision -> e
+    org.xclcharts.common.MathHelper getInstance() -> a
+    void disableHighPrecision() -> b
+    float add(float,float) -> a
+    float sub(float,float) -> b
+    float mul(float,float) -> c
+    float div(float,float) -> d
+    double sub(double,double) -> a
+    double div(double,double) -> b
+org.xclcharts.common.SysinfoHelper -> a.a.b.d:
+    org.xclcharts.common.SysinfoHelper instance -> a
+    org.xclcharts.common.SysinfoHelper getInstance() -> a
+    boolean supportHardwareAccelerated() -> b
+org.xclcharts.event.click.ArcPosition -> a.a.c.a.a:
+org.xclcharts.event.click.PlotPointPosition -> a.a.c.a.b:
+    void savePlotPosition(float,float) -> a
+    void savePlotRectF(float,float,float,float) -> a
+org.xclcharts.event.click.PointPosition -> a.a.c.a.c:
+    android.graphics.PointF mPoint -> a
+org.xclcharts.event.click.PositionRecord -> a.a.c.a.d:
+org.xclcharts.event.click.RectPosition -> a.a.c.a.e:
+    android.graphics.RectF mRectF -> a
+    void saveRectF(float,float,float,float) -> b
+org.xclcharts.event.touch.ChartTouch -> a.a.c.b.a:
+    android.view.View mView -> a
+    org.xclcharts.renderer.XChart mChart -> b
+    float oldX -> c
+    float oldY -> d
+    float oldDist -> e
+    float newDist -> f
+    float halfDist -> g
+    float scaleRate -> h
+    int action -> i
+    float newX -> j
+    float newY -> k
+    float mPanRatio -> l
+    void handleTouch(android.view.MotionEvent) -> a
+    float spacing(android.view.MotionEvent) -> b
+org.xclcharts.renderer.AxesChart -> a.a.d.a:
+    org.xclcharts.renderer.axis.DataAxisRender dataAxis -> a
+    org.xclcharts.renderer.axis.CategoryAxisRender categoryAxis -> b
+    org.xclcharts.renderer.plot.AxisTitleRender axisTitle -> g
+    org.xclcharts.renderer.XEnum$Direction mDirection -> l
+    float mMoveX -> c
+    float mMoveY -> d
+    org.xclcharts.renderer.XEnum$AxisLocation mDataAxisLocation -> m
+    org.xclcharts.renderer.XEnum$AxisLocation mCategoryAxisLocation -> n
+    boolean mAxesClosed -> o
+    float myMargin -> p
+    float mxMargin -> q
+    java.util.ArrayList mLstDataTick -> e
+    java.util.ArrayList mLstCateTick -> f
+    org.xclcharts.renderer.AxesChart$ClipExt mClipExt -> r
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$AxisLocation -> s
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$Direction -> t
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$PanMode -> u
+    org.xclcharts.renderer.axis.DataAxis getDataAxis() -> e
+    org.xclcharts.renderer.axis.CategoryAxis getCategoryAxis() -> f
+    void initCategoryAxis() -> d
+    void initDataAxis() -> m
+    float getPlotScreenWidth() -> g
+    float getPlotScreenHeight() -> h
+    float getVerticalYSteps(int) -> a
+    float getVerticalXSteps(int) -> b
+    boolean isDrawYAxisTickMarks(float,float) -> g
+    boolean isDrawXAxisTickMarks(float,float) -> h
+    void drawHorizontalGridLines(android.graphics.Canvas,float,float,int,int,float,float) -> a
+    void drawVerticalGridLines$f45b810(android.graphics.Canvas,float,float,float) -> a
+    org.xclcharts.renderer.XEnum$AxisLocation getDataAxisLocation() -> i
+    org.xclcharts.renderer.XEnum$AxisLocation getCategoryAxisLocation() -> j
+    float getAxisXPos(org.xclcharts.renderer.XEnum$AxisLocation) -> a
+    float getAxisYPos(org.xclcharts.renderer.XEnum$AxisLocation) -> b
+    void categoryAxisDefaultSetting() -> b
+    void dataAxisDefaultSetting() -> c
+    void setAxesClosed(boolean) -> a
+    void initMoveXY() -> H
+    void drawClipCategoryAxisGridlines(android.graphics.Canvas) -> c
+    void drawClipDataAxisGridlines(android.graphics.Canvas) -> d
+    void drawClipPlot(android.graphics.Canvas) -> a
+    void drawClipAxisClosed(android.graphics.Canvas) -> i
+    void drawClipAxisLine(android.graphics.Canvas) -> j
+    void drawClipDataAxisTickMarks(android.graphics.Canvas) -> k
+    void drawClipCategoryAxisTickMarks(android.graphics.Canvas) -> l
+    void drawClipLegend(android.graphics.Canvas) -> b
+    float getClipYMargin() -> I
+    float getClipXMargin() -> J
+    org.xclcharts.renderer.AxesChart$ClipExt getClipExt() -> K
+    boolean postRender(android.graphics.Canvas) -> e
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$AxisLocation() -> L
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$Direction() -> M
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$PanMode() -> N
+org.xclcharts.renderer.AxesChart$ClipExt -> a.a.d.b:
+    float mClipExtLeft -> a
+    float mClipExtTop -> b
+    float mClipExtRight -> c
+    float mClipExtBottom -> d
+    float clipExtLeft -> e
+    float clipExtTop -> f
+    float clipExtRight -> g
+    float clipExtBottom -> h
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$ChartType -> i
+    void calc(org.xclcharts.renderer.XEnum$ChartType) -> a
+    float getExtLeft() -> a
+    float getExtTop() -> b
+    float getExtRight() -> c
+    float getExtBottom() -> d
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$ChartType() -> e
+org.xclcharts.renderer.EventChart -> a.a.d.c:
+    boolean mListenClick -> a
+    int mClickRangeExtValue -> b
+    java.util.ArrayList mRecordset -> c
+    boolean mShowClikedFocus -> d
+    android.graphics.Paint mFocusPaint -> e
+    android.graphics.PointF mFocusPoint -> f
+    float mFocusRadius -> g
+    android.graphics.RectF mFocusRect -> l
+    org.xclcharts.event.click.ArcPosition mFocusArcPosition -> m
+    boolean mFocusArcSelect -> n
+    org.xclcharts.renderer.info.ToolTip mToolTip$5b509827 -> o
+    void ActiveListenItemClick() -> k
+    void showClikedFocus() -> l
+    void savePointRecord(int,int,float,float,float,float,float,float) -> a
+    void extPointClickRange(int) -> c
+    void initPositionRecord() -> b
+    boolean renderFocusShape(android.graphics.Canvas) -> f
+    boolean postRender(android.graphics.Canvas) -> e
+org.xclcharts.renderer.LnChart -> a.a.d.d:
+    android.graphics.PointF[] BezierControls -> l
+    java.util.List mAnchorSet -> m
+    org.xclcharts.renderer.line.PlotCustomLine mCustomLine -> g
+    boolean mXCoordFirstTickmarksBegin -> n
+    org.xclcharts.renderer.XEnum$BarCenterStyle mBarCenterStyle -> o
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$AxisLocation -> p
+    float getVPValPosition(double) -> c
+    float getLnXValPosition(double,double,double) -> a
+    float getAxisYPos(org.xclcharts.renderer.XEnum$AxisLocation) -> b
+    void drawClipDataAxisGridlines(android.graphics.Canvas) -> d
+    void drawClipCategoryAxisGridlines(android.graphics.Canvas) -> c
+    void renderBezierCurveLine(android.graphics.Canvas,android.graphics.Paint,android.graphics.Path,java.util.List) -> a
+    void renderBezierCurvePath(android.graphics.Canvas,android.graphics.Paint,android.graphics.Path,android.graphics.PointF,android.graphics.PointF,android.graphics.PointF[]) -> a
+    void setAnchorDataPoint(java.util.List) -> c
+    java.util.List getAnchorDataPoint() -> m
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$AxisLocation() -> d
+org.xclcharts.renderer.XChart -> a.a.d.e:
+    org.xclcharts.renderer.plot.PlotAreaRender plotArea -> h
+    org.xclcharts.renderer.plot.PlotGridRender plotGrid -> i
+    org.xclcharts.renderer.plot.PlotTitleRender plotTitle -> a
+    float mLeft -> b
+    float mTop -> c
+    float mRight -> d
+    float mBottom -> e
+    float mWidth -> f
+    float mHeight -> g
+    float mPaddingTop -> l
+    float mPaddingBottom -> m
+    float mPaddingLeft -> n
+    float mPaddingRight -> o
+    boolean mBackgroundColorVisible -> p
+    float[] mTranslateXY -> j
+    boolean mShowBorder -> q
+    org.xclcharts.renderer.plot.BorderRender mBorder -> r
+    org.xclcharts.renderer.plot.PlotLegendRender plotLegend -> k
+    org.xclcharts.renderer.info.Legend mDyLegend$34cf37d3 -> s
+    boolean mEnableScale -> t
+    float mXScale -> u
+    float mYScale -> v
+    float mCenterX -> w
+    float mCenterY -> x
+    boolean mDyLineVisible -> y
+    org.xclcharts.renderer.info.DyLineRender mDyLine -> z
+    boolean mEnablePanMode -> A
+    org.xclcharts.renderer.XEnum$PanMode mPlotPanMode -> B
+    boolean mControlPanRange -> C
+    org.xclcharts.renderer.XEnum$ChartType getType() -> a
+    org.xclcharts.renderer.plot.PlotLegend getPlotLegend() -> n
+    void setPadding(float,float,float,float) -> a
+    org.xclcharts.renderer.plot.PlotArea getPlotArea() -> o
+    org.xclcharts.renderer.plot.PlotGrid getPlotGrid() -> p
+    void setChartRange(float,float) -> a
+    void setTitle(java.lang.String) -> a
+    float getLeft() -> q
+    float getTop() -> r
+    float getRight() -> s
+    float getBottom() -> t
+    float getWidth() -> u
+    float getHeight() -> v
+    void setTranslateXY(float,float) -> b
+    float[] getTranslateXY() -> w
+    void calcPlotRange() -> x
+    void renderTitle(android.graphics.Canvas) -> g
+    boolean drawAnchor(java.util.List,int,int,android.graphics.Canvas,float,float,float) -> a
+    void showRoundBorder() -> y
+    int getBorderWidth() -> z
+    void setScale(float,float,float,float) -> b
+    void disableScale() -> A
+    boolean getScaleStatus() -> B
+    org.xclcharts.renderer.XEnum$PanMode getPlotPanMode() -> C
+    boolean getCtlPanRangeStatus() -> D
+    boolean getPanModeStatus() -> E
+    void showDyLine() -> F
+    org.xclcharts.renderer.info.DyLine getDyLine() -> G
+    boolean postRender(android.graphics.Canvas) -> e
+    boolean render(android.graphics.Canvas) -> h
+    float add(float,float) -> c
+    float sub(float,float) -> d
+    float mul(float,float) -> e
+    float div(float,float) -> f
+org.xclcharts.renderer.XEnum$AnchorStyle -> a.a.d.f:
+    org.xclcharts.renderer.XEnum$AnchorStyle RECT -> a
+    org.xclcharts.renderer.XEnum$AnchorStyle CAPRECT -> b
+    org.xclcharts.renderer.XEnum$AnchorStyle ROUNDRECT -> c
+    org.xclcharts.renderer.XEnum$AnchorStyle CAPROUNDRECT -> d
+    org.xclcharts.renderer.XEnum$AnchorStyle CIRCLE -> e
+    org.xclcharts.renderer.XEnum$AnchorStyle VLINE -> f
+    org.xclcharts.renderer.XEnum$AnchorStyle HLINE -> g
+    org.xclcharts.renderer.XEnum$AnchorStyle TOBOTTOM -> h
+    org.xclcharts.renderer.XEnum$AnchorStyle TOTOP -> i
+    org.xclcharts.renderer.XEnum$AnchorStyle TOLEFT -> j
+    org.xclcharts.renderer.XEnum$AnchorStyle TORIGHT -> k
+    org.xclcharts.renderer.XEnum$AnchorStyle[] ENUM$VALUES -> l
+    org.xclcharts.renderer.XEnum$AnchorStyle[] values() -> a
+org.xclcharts.renderer.XEnum$AxisLineStyle -> a.a.d.g:
+    org.xclcharts.renderer.XEnum$AxisLineStyle NONE -> a
+    org.xclcharts.renderer.XEnum$AxisLineStyle CAP -> b
+    org.xclcharts.renderer.XEnum$AxisLineStyle FILLCAP -> c
+org.xclcharts.renderer.XEnum$AxisLocation -> a.a.d.h:
+    org.xclcharts.renderer.XEnum$AxisLocation TOP -> a
+    org.xclcharts.renderer.XEnum$AxisLocation BOTTOM -> b
+    org.xclcharts.renderer.XEnum$AxisLocation LEFT -> c
+    org.xclcharts.renderer.XEnum$AxisLocation RIGHT -> d
+    org.xclcharts.renderer.XEnum$AxisLocation HORIZONTAL_CENTER -> e
+    org.xclcharts.renderer.XEnum$AxisLocation VERTICAL_CENTER -> f
+    org.xclcharts.renderer.XEnum$AxisLocation[] ENUM$VALUES -> g
+    org.xclcharts.renderer.XEnum$AxisLocation[] values() -> a
+org.xclcharts.renderer.XEnum$BarCenterStyle -> a.a.d.i:
+    org.xclcharts.renderer.XEnum$BarCenterStyle TICKMARKS -> a
+    org.xclcharts.renderer.XEnum$BarCenterStyle SPACE -> b
+org.xclcharts.renderer.XEnum$ChartType -> a.a.d.j:
+    org.xclcharts.renderer.XEnum$ChartType NONE -> a
+    org.xclcharts.renderer.XEnum$ChartType BAR -> b
+    org.xclcharts.renderer.XEnum$ChartType BAR3D -> c
+    org.xclcharts.renderer.XEnum$ChartType STACKBAR -> d
+    org.xclcharts.renderer.XEnum$ChartType PIE -> e
+    org.xclcharts.renderer.XEnum$ChartType PIE3D -> f
+    org.xclcharts.renderer.XEnum$ChartType DOUNT -> g
+    org.xclcharts.renderer.XEnum$ChartType LINE -> h
+    org.xclcharts.renderer.XEnum$ChartType SPLINE -> i
+    org.xclcharts.renderer.XEnum$ChartType AREA -> j
+    org.xclcharts.renderer.XEnum$ChartType ROSE -> k
+    org.xclcharts.renderer.XEnum$ChartType RADAR -> l
+    org.xclcharts.renderer.XEnum$ChartType DIAL -> m
+    org.xclcharts.renderer.XEnum$ChartType RANGEBAR -> n
+    org.xclcharts.renderer.XEnum$ChartType ARCLINE -> o
+    org.xclcharts.renderer.XEnum$ChartType CIRCLE -> p
+    org.xclcharts.renderer.XEnum$ChartType SCATTER -> q
+    org.xclcharts.renderer.XEnum$ChartType BUBBLE -> r
+    org.xclcharts.renderer.XEnum$ChartType GAUGE -> s
+    org.xclcharts.renderer.XEnum$ChartType FUNNEL -> t
+    org.xclcharts.renderer.XEnum$ChartType[] ENUM$VALUES -> u
+    org.xclcharts.renderer.XEnum$ChartType[] values() -> a
+org.xclcharts.renderer.XEnum$CrurveLineStyle -> a.a.d.k:
+    org.xclcharts.renderer.XEnum$CrurveLineStyle BEELINE -> a
+    org.xclcharts.renderer.XEnum$CrurveLineStyle BEZIERCURVE -> b
+    org.xclcharts.renderer.XEnum$CrurveLineStyle[] ENUM$VALUES -> c
+    org.xclcharts.renderer.XEnum$CrurveLineStyle[] values() -> a
+org.xclcharts.renderer.XEnum$DataAreaStyle -> a.a.d.l:
+    org.xclcharts.renderer.XEnum$DataAreaStyle FILL -> a
+    org.xclcharts.renderer.XEnum$DataAreaStyle STROKE -> b
+    org.xclcharts.renderer.XEnum$DataAreaStyle[] ENUM$VALUES -> c
+    org.xclcharts.renderer.XEnum$DataAreaStyle[] values() -> a
+org.xclcharts.renderer.XEnum$Direction -> a.a.d.m:
+    org.xclcharts.renderer.XEnum$Direction HORIZONTAL -> a
+    org.xclcharts.renderer.XEnum$Direction VERTICAL -> b
+    org.xclcharts.renderer.XEnum$Direction[] ENUM$VALUES -> c
+    org.xclcharts.renderer.XEnum$Direction[] values() -> a
+org.xclcharts.renderer.XEnum$DotStyle -> a.a.d.n:
+    org.xclcharts.renderer.XEnum$DotStyle HIDE -> a
+    org.xclcharts.renderer.XEnum$DotStyle TRIANGLE -> b
+    org.xclcharts.renderer.XEnum$DotStyle RECT -> c
+    org.xclcharts.renderer.XEnum$DotStyle DOT -> d
+    org.xclcharts.renderer.XEnum$DotStyle RING -> e
+    org.xclcharts.renderer.XEnum$DotStyle RING2 -> f
+    org.xclcharts.renderer.XEnum$DotStyle PRISMATIC -> g
+    org.xclcharts.renderer.XEnum$DotStyle X -> h
+    org.xclcharts.renderer.XEnum$DotStyle CROSS -> i
+    org.xclcharts.renderer.XEnum$DotStyle[] ENUM$VALUES -> j
+    org.xclcharts.renderer.XEnum$DotStyle[] values() -> a
+org.xclcharts.renderer.XEnum$DyLineStyle -> a.a.d.o:
+    org.xclcharts.renderer.XEnum$DyLineStyle Cross -> a
+    org.xclcharts.renderer.XEnum$DyLineStyle BackwardDiagonal -> b
+    org.xclcharts.renderer.XEnum$DyLineStyle Vertical -> c
+    org.xclcharts.renderer.XEnum$DyLineStyle Horizontal -> d
+    org.xclcharts.renderer.XEnum$DyLineStyle[] ENUM$VALUES -> e
+org.xclcharts.renderer.XEnum$HorizontalAlign -> a.a.d.p:
+    org.xclcharts.renderer.XEnum$HorizontalAlign LEFT -> a
+    org.xclcharts.renderer.XEnum$HorizontalAlign CENTER -> b
+    org.xclcharts.renderer.XEnum$HorizontalAlign RIGHT -> c
+    org.xclcharts.renderer.XEnum$HorizontalAlign[] ENUM$VALUES -> d
+    org.xclcharts.renderer.XEnum$HorizontalAlign[] values() -> a
+org.xclcharts.renderer.XEnum$LabelLineFeed -> a.a.d.q:
+    org.xclcharts.renderer.XEnum$LabelLineFeed NORMAL -> a
+    org.xclcharts.renderer.XEnum$LabelLineFeed ODD_EVEN -> b
+    org.xclcharts.renderer.XEnum$LabelLineFeed EVEN_ODD -> c
+    org.xclcharts.renderer.XEnum$LabelLineFeed[] ENUM$VALUES -> d
+    org.xclcharts.renderer.XEnum$LabelLineFeed[] values() -> a
+org.xclcharts.renderer.XEnum$LegendType -> a.a.d.r:
+    org.xclcharts.renderer.XEnum$LegendType COLUMN -> a
+    org.xclcharts.renderer.XEnum$LegendType ROW -> b
+    org.xclcharts.renderer.XEnum$LegendType[] ENUM$VALUES -> c
+    org.xclcharts.renderer.XEnum$LegendType[] values() -> a
+org.xclcharts.renderer.XEnum$LineStyle -> a.a.d.s:
+    org.xclcharts.renderer.XEnum$LineStyle SOLID -> a
+    org.xclcharts.renderer.XEnum$LineStyle DOT -> b
+    org.xclcharts.renderer.XEnum$LineStyle DASH -> c
+    org.xclcharts.renderer.XEnum$LineStyle[] ENUM$VALUES -> d
+    org.xclcharts.renderer.XEnum$LineStyle[] values() -> a
+org.xclcharts.renderer.XEnum$ODD_EVEN -> a.a.d.t:
+    org.xclcharts.renderer.XEnum$ODD_EVEN ODD -> a
+    org.xclcharts.renderer.XEnum$ODD_EVEN EVEN -> b
+    org.xclcharts.renderer.XEnum$ODD_EVEN NONE -> c
+org.xclcharts.renderer.XEnum$PanMode -> a.a.d.u:
+    org.xclcharts.renderer.XEnum$PanMode HORIZONTAL -> a
+    org.xclcharts.renderer.XEnum$PanMode VERTICAL -> b
+    org.xclcharts.renderer.XEnum$PanMode FREE -> c
+    org.xclcharts.renderer.XEnum$PanMode[] ENUM$VALUES -> d
+    org.xclcharts.renderer.XEnum$PanMode[] values() -> a
+org.xclcharts.renderer.XEnum$RectType -> a.a.d.v:
+    org.xclcharts.renderer.XEnum$RectType RECT -> a
+    org.xclcharts.renderer.XEnum$RectType ROUNDRECT -> b
+    org.xclcharts.renderer.XEnum$RectType[] ENUM$VALUES -> c
+    org.xclcharts.renderer.XEnum$RectType[] values() -> a
+org.xclcharts.renderer.XEnum$VerticalAlign -> a.a.d.w:
+    org.xclcharts.renderer.XEnum$VerticalAlign TOP -> a
+    org.xclcharts.renderer.XEnum$VerticalAlign MIDDLE -> b
+    org.xclcharts.renderer.XEnum$VerticalAlign BOTTOM -> c
+    org.xclcharts.renderer.XEnum$VerticalAlign[] ENUM$VALUES -> d
+    org.xclcharts.renderer.XEnum$VerticalAlign[] values() -> a
+org.xclcharts.renderer.axis.Axis -> a.a.d.a.a:
+    android.graphics.Paint mPaintAxis -> a
+    boolean mAxisLineVisible -> b
+    android.graphics.Paint mPaintTickMarks -> c
+    android.graphics.Paint mPaintTickLabels -> d
+    boolean mTickMarksVisible -> e
+    boolean mAxisLabelsVisible -> f
+    float mTickLabelRotateAngle -> g
+    boolean mAxisVisible -> h
+    boolean isShow() -> a
+    boolean isShowAxisLine() -> b
+    android.graphics.Paint getAxisPaint() -> c
+    android.graphics.Paint getTickMarksPaint() -> d
+    android.graphics.Paint getTickLabelPaint() -> e
+    boolean isShowTickMarks() -> f
+    boolean isShowAxisLabels() -> g
+org.xclcharts.renderer.axis.CategoryAxis -> a.a.d.a.b:
+    boolean mAxisBindStd -> a
+org.xclcharts.renderer.axis.CategoryAxisRender -> a.a.d.a.c:
+    java.util.List getDataSet() -> h
+    void renderAxisHorizontalTick(float,float,android.graphics.Canvas,float,float,java.lang.String,float,float,boolean) -> a
+    void renderAxisVerticalTick(android.graphics.Canvas,float,float,java.lang.String,float,float,boolean,org.xclcharts.renderer.XEnum$ODD_EVEN) -> a
+    void renderAxis(android.graphics.Canvas,float,float,float,float) -> a
+    void renderAxisLine(android.graphics.Canvas,float,float,float,float) -> b
+    void setDataBuilding(java.util.List) -> a
+org.xclcharts.renderer.axis.DataAxis -> a.a.d.a.d:
+    double mDataAxisMin -> c
+    double mDataAxisMax -> d
+    double mDataAxisSteps -> e
+    double mDetailModeSteps -> f
+    boolean mShowFirstTick -> a
+    float mDataAxisStd -> g
+    boolean mAxisStdStatus -> h
+    void setAxisMin(double) -> a
+    void setAxisMax(double) -> b
+    void setAxisSteps(double) -> c
+    float getAxisMin() -> h
+    float getAxisMax() -> i
+    double getAxisSteps() -> j
+org.xclcharts.renderer.axis.DataAxisRender -> a.a.d.a.e:
+    int mCurrentId -> c
+    float getAxisRange() -> k
+    void setAxisTickCurrentID(int) -> a
+    boolean isPrimaryTick() -> m
+    boolean isPrimaryTick(int) -> b
+    int getTickMarksLength() -> l
+    boolean isShowAxisLabels() -> g
+    void renderAxisHorizontalTick(float,float,android.graphics.Canvas,float,float,java.lang.String,boolean) -> a
+    void renderAxisVerticalTick(android.graphics.Canvas,float,float,java.lang.String,boolean,org.xclcharts.renderer.XEnum$ODD_EVEN) -> a
+    void renderAxis(android.graphics.Canvas,float,float,float,float) -> a
+    void renderAxisLine(android.graphics.Canvas,float,float,float,float) -> b
+org.xclcharts.renderer.axis.XYAxis -> a.a.d.a.f:
+    java.util.List mDataSet -> b
+    android.graphics.Paint$Align mTickMarksAlign -> a
+    org.xclcharts.renderer.XEnum$VerticalAlign mTickMarksPosition -> c
+    int mTickMarksLength -> d
+    int mTickLabelMargin -> e
+    org.xclcharts.renderer.XEnum$AxisLineStyle mAxisLineStyle -> f
+    float mAxisLineStyleWidth -> g
+    float mAxisLineStyleHeight -> h
+    org.xclcharts.renderer.XEnum$LabelLineFeed mLineFeed -> i
+    int[] $SWITCH_TABLE$android$graphics$Paint$Align -> j
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$VerticalAlign -> k
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LabelLineFeed -> l
+    void setHorizontalTickAlign(android.graphics.Paint$Align) -> a
+    java.lang.String getFormatterLabel(java.lang.String) -> a
+    void renderHorizontalTick(float,float,android.graphics.Canvas,float,float,java.lang.String,float,float,boolean) -> b
+    void renderVerticalTick(android.graphics.Canvas,float,float,java.lang.String,float,float,boolean,org.xclcharts.renderer.XEnum$ODD_EVEN) -> b
+    int getTickMarksLength() -> l
+    void drawAxisLine(android.graphics.Canvas,float,float,float,float) -> c
+    int[] $SWITCH_TABLE$android$graphics$Paint$Align() -> h
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$VerticalAlign() -> i
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LabelLineFeed() -> j
+org.xclcharts.renderer.info.AnchorDataPoint -> a.a.d.b.a:
+    int mDataSeriesID -> a
+    int mDataChildID -> b
+    org.xclcharts.renderer.XEnum$AnchorStyle mAnchorStyle -> c
+    java.lang.String mAnchor -> d
+    int mAnchorTextSize -> e
+    int mAnchorTextColor -> f
+    int mBgColor -> g
+    org.xclcharts.renderer.XEnum$DataAreaStyle mDataAreaStyle -> h
+    float mRadius -> i
+    float mRoundRaidus -> j
+    int mLineWidth -> k
+    float mCapRectW -> l
+    float mCapRectH -> m
+    float mCapRectHeight -> n
+    org.xclcharts.renderer.XEnum$LineStyle mLineStyle -> o
+    org.xclcharts.renderer.XEnum$AnchorStyle getAnchorStyle() -> a
+    int getDataSeriesID() -> b
+    int getDataChildID() -> c
+    java.lang.String getAnchor() -> d
+    float getRadius() -> e
+    float getTextSize() -> f
+    int getTextColor() -> g
+    int getLineWidth() -> h
+    void setBgColor(int) -> a
+    int getBgColor() -> i
+    void setAreaStyle(org.xclcharts.renderer.XEnum$DataAreaStyle) -> a
+    org.xclcharts.renderer.XEnum$DataAreaStyle getAreaStyle() -> j
+    float getCapRectW() -> k
+    float getCapRectH() -> l
+    float getCapRectHeight() -> m
+    float getRoundRadius() -> n
+    org.xclcharts.renderer.XEnum$LineStyle getLineStyle() -> o
+org.xclcharts.renderer.info.AnchorRender -> a.a.d.b.b:
+    org.xclcharts.renderer.info.AnchorRender instance -> a
+    android.graphics.RectF mRect -> b
+    android.graphics.Paint mPaintText -> c
+    android.graphics.Paint mPaintBg -> d
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$DataAreaStyle -> e
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$AnchorStyle -> f
+    org.xclcharts.renderer.info.AnchorRender getInstance() -> a
+    void renderAnchor(android.graphics.Canvas,org.xclcharts.renderer.info.AnchorDataPoint,float,float,float,float,float,float,float) -> a
+    void renderRound$39f17907(android.graphics.Canvas,org.xclcharts.renderer.info.AnchorDataPoint,float,float,float,float,float) -> a
+    android.graphics.Paint getTextPaint() -> b
+    android.graphics.Paint getBgPaint() -> c
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$DataAreaStyle() -> d
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$AnchorStyle() -> e
+org.xclcharts.renderer.info.DyInfo -> a.a.d.b.c:
+org.xclcharts.renderer.info.DyLine -> a.a.d.b.d:
+    android.graphics.Paint mPaintLine -> b
+    android.graphics.PointF mCenterXY -> a
+    org.xclcharts.renderer.XEnum$DyLineStyle mDyLineStyle -> c
+    org.xclcharts.renderer.XEnum$LineStyle mLineDrawStyle -> d
+    void setDyLineStyle(org.xclcharts.renderer.XEnum$DyLineStyle) -> a
+org.xclcharts.renderer.info.DyLineRender -> a.a.d.b.e:
+    float mLeft -> b
+    float mTop -> c
+    float mRight -> d
+    float mBottom -> e
+org.xclcharts.renderer.info.Legend -> a.a.d.b.f:
+org.xclcharts.renderer.info.PlotAxisTick -> a.a.d.b.g:
+    boolean mShowTickMarks -> g
+    boolean isShowTickMarks() -> a
+org.xclcharts.renderer.info.PlotDataInfo -> a.a.d.b.h:
+    float X -> a
+    float Y -> b
+    java.lang.String Label -> c
+    int ID -> d
+    float labelX -> e
+    float labelY -> f
+org.xclcharts.renderer.info.ToolTip -> a.a.d.b.i:
+org.xclcharts.renderer.line.DotInfo -> a.a.d.c.a:
+    java.lang.Double mXValue -> a
+    java.lang.Double mYValue -> b
+    float mX -> c
+    float mY -> d
+org.xclcharts.renderer.line.PlotCustomLine -> a.a.d.c.b:
+    long lastClickTime -> a
+org.xclcharts.renderer.line.PlotDot -> a.a.d.c.c:
+    int mColor -> a
+    int mRingInnerColor -> b
+    int mRing2InnerColor -> c
+    org.xclcharts.renderer.XEnum$DotStyle mDotStyle -> d
+    float mRadius -> e
+    int mAlpha -> f
+    void setColor(int) -> a
+    int getColor() -> a
+    int getRingInnerColor() -> b
+    int getRing2InnerColor() -> c
+    void setDotStyle(org.xclcharts.renderer.XEnum$DotStyle) -> a
+    org.xclcharts.renderer.XEnum$DotStyle getDotStyle() -> d
+    float getDotRadius() -> e
+    int getAlpha() -> f
+org.xclcharts.renderer.line.PlotDotRender -> a.a.d.c.d:
+    org.xclcharts.renderer.line.PlotDotRender instance -> a
+    android.graphics.Paint mPaintFill -> b
+    android.graphics.Path mPath -> c
+    android.graphics.RectF mRect -> d
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$DotStyle -> e
+    org.xclcharts.renderer.line.PlotDotRender getInstance() -> a
+    void initPath() -> b
+    android.graphics.Paint getInnerFillPaint() -> c
+    android.graphics.RectF renderDot(android.graphics.Canvas,org.xclcharts.renderer.line.PlotDot,float,float,android.graphics.Paint) -> a
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$DotStyle() -> d
+org.xclcharts.renderer.line.PlotLine -> a.a.d.c.e:
+    android.graphics.Paint mPaintLine -> a
+    android.graphics.Paint mPaintLabel -> b
+    android.graphics.Paint mPaintDot -> c
+    org.xclcharts.renderer.line.PlotDot mPlotDot -> d
+    android.graphics.Paint getLinePaint() -> a
+    android.graphics.Paint getDotLabelPaint() -> b
+    android.graphics.Paint getDotPaint() -> c
+    org.xclcharts.renderer.line.PlotDot getPlotDot() -> d
+    void setDotStyle(org.xclcharts.renderer.XEnum$DotStyle) -> a
+    org.xclcharts.renderer.XEnum$DotStyle getDotStyle() -> e
+org.xclcharts.renderer.plot.AxisTitle -> a.a.d.d.a:
+org.xclcharts.renderer.plot.AxisTitleRender -> a.a.d.d.b:
+org.xclcharts.renderer.plot.Border -> a.a.d.d.c:
+    android.graphics.Paint mPaintBorderLine -> b
+    org.xclcharts.renderer.XEnum$LineStyle mLineStyle -> c
+    org.xclcharts.renderer.XEnum$RectType mRectType -> d
+    int mRaidus -> e
+    android.graphics.Paint mPaintBackground -> a
+    android.graphics.Paint getLinePaint() -> a
+    void setBorderRectType(org.xclcharts.renderer.XEnum$RectType) -> a
+    org.xclcharts.renderer.XEnum$LineStyle getBorderLineStyle() -> b
+    org.xclcharts.renderer.XEnum$RectType getBorderRectType() -> c
+    int getRoundRadius() -> d
+    android.graphics.Paint getBackgroundPaint() -> e
+org.xclcharts.renderer.plot.BorderRender -> a.a.d.d.d:
+    android.graphics.RectF mRect -> b
+    android.graphics.Path mPath -> c
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LineStyle -> d
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$RectType -> e
+    void setPaintLineStyle() -> f
+    void renderRect(android.graphics.Canvas,android.graphics.RectF,boolean,boolean) -> a
+    void renderBorder(java.lang.String,android.graphics.Canvas,float,float,float,float) -> a
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LineStyle() -> g
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$RectType() -> h
+org.xclcharts.renderer.plot.PlotArea -> a.a.d.d.e:
+    float mLeft -> a
+    float mTop -> b
+    float mRight -> c
+    float mBottom -> d
+    float mWidth -> e
+    float mHeight -> f
+    android.graphics.Paint mBackgroundPaint -> g
+    boolean mBackgroundColorVisible -> h
+    float mExtWidth -> i
+    boolean mApplayGradient -> j
+    int mBeginColor -> k
+    int mEndColor -> l
+    android.graphics.Shader$TileMode mTileMode -> m
+    org.xclcharts.renderer.XEnum$Direction mDirection -> n
+    android.graphics.Paint getBackgroundPaint() -> a
+    boolean getBackgroundColorVisible() -> b
+    void setBackgroundColor(boolean,int) -> a
+    float getLeft() -> c
+    float getPlotLeft() -> d
+    float getTop() -> e
+    float getPlotTop() -> f
+    float getBottom() -> g
+    float getPlotBottom() -> h
+    float getRight() -> i
+    float getPlotRight() -> j
+    float getWidth() -> k
+    float getPlotWidth() -> l
+    float getHeight() -> m
+    void setApplayGradient(boolean) -> a
+    boolean getApplayGradient() -> n
+    void setGradientDirection(org.xclcharts.renderer.XEnum$Direction) -> a
+    org.xclcharts.renderer.XEnum$Direction getGradientDirection() -> o
+    android.graphics.Shader$TileMode getGradientMode() -> p
+    void setBeginColor(int) -> a
+    int getBeginColor() -> q
+    int getEndColor() -> r
+org.xclcharts.renderer.plot.PlotAreaRender -> a.a.d.d.f:
+    float getCenterX() -> s
+    float getCenterY() -> t
+    void setLeft(float) -> a
+    void setTop(float) -> b
+    void setRight(float) -> c
+    void setBottom(float) -> d
+    float getPlotRight() -> j
+    boolean render(android.graphics.Canvas) -> a
+org.xclcharts.renderer.plot.PlotGrid -> a.a.d.d.g:
+    android.graphics.Paint mPaintGridLineHorizontal -> a
+    android.graphics.Paint mPaintGridLineVertical -> b
+    boolean mGridLinesHorizontalVisible -> c
+    boolean mGridLinesVerticalVisible -> d
+    boolean mOddRowBgColorVisible -> e
+    boolean mEvenRowBgColorVisible -> f
+    android.graphics.Paint mPaintOddBgColor -> g
+    android.graphics.Paint mPaintEvenBgColor -> h
+    org.xclcharts.renderer.XEnum$LineStyle mHorizontalLineStyle -> i
+    org.xclcharts.renderer.XEnum$LineStyle mVerticalLineStyle -> j
+    void showHorizontalLines() -> a
+    boolean isShowHorizontalLines() -> b
+    void showVerticalLines() -> c
+    boolean isShowVerticalLines() -> d
+    android.graphics.Paint getHorizontalLinePaint() -> e
+    android.graphics.Paint getVerticalLinePaint() -> f
+    org.xclcharts.renderer.XEnum$LineStyle getVerticalLineStyle() -> g
+    org.xclcharts.renderer.XEnum$LineStyle getHorizontalLineStyle() -> h
+    void setHorizontalLineStyle(org.xclcharts.renderer.XEnum$LineStyle) -> a
+org.xclcharts.renderer.plot.PlotGridRender -> a.a.d.d.h:
+    boolean mMajorTickLine -> a
+    void setPrimaryTickLine(boolean) -> a
+    void renderGridLinesHorizontal(android.graphics.Canvas,float,float,float,float) -> a
+    void renderGridLinesVertical(android.graphics.Canvas,float,float,float,float) -> b
+org.xclcharts.renderer.plot.PlotLabel -> a.a.d.d.i:
+org.xclcharts.renderer.plot.PlotLabelRender -> a.a.d.d.j:
+org.xclcharts.renderer.plot.PlotLegend -> a.a.d.d.k:
+    float mMargin -> a
+    android.graphics.Paint mKeyPaint -> j
+    boolean mVisible -> k
+    float mOffsetX -> b
+    float mOffsetY -> c
+    float mRowSpan -> d
+    float mColSpan -> e
+    org.xclcharts.renderer.XEnum$LegendType mLegendType -> l
+    org.xclcharts.renderer.XEnum$HorizontalAlign mHorizontalAlign -> m
+    org.xclcharts.renderer.XEnum$VerticalAlign mVerticalAlign -> n
+    org.xclcharts.renderer.plot.BorderRender mBorder -> f
+    boolean mShowBox -> g
+    boolean mShowBoxBorder -> h
+    boolean mShowBackground -> i
+    void show() -> a
+    boolean isShow() -> b
+    void hideBox() -> c
+    void showBox() -> d
+    android.graphics.Paint getPaint() -> e
+    void setType(org.xclcharts.renderer.XEnum$LegendType) -> a
+    org.xclcharts.renderer.XEnum$LegendType getType() -> f
+    void setHorizontalAlign(org.xclcharts.renderer.XEnum$HorizontalAlign) -> a
+    org.xclcharts.renderer.XEnum$HorizontalAlign getHorizontalAlign() -> g
+    void setVerticalAlign(org.xclcharts.renderer.XEnum$VerticalAlign) -> a
+    org.xclcharts.renderer.XEnum$VerticalAlign getVerticalAlign() -> h
+    org.xclcharts.renderer.plot.Border getBox() -> i
+org.xclcharts.renderer.plot.PlotLegendRender -> a.a.d.d.l:
+    org.xclcharts.renderer.plot.PlotArea mPlotArea -> j
+    org.xclcharts.renderer.XChart mXChart -> k
+    float mKeyLabelX -> l
+    float mKeyLabelY -> m
+    java.util.ArrayList mLstDotStyle -> n
+    java.util.ArrayList mLstKey -> o
+    java.util.ArrayList mLstColor -> p
+    float mRectWidth -> q
+    float mRectHeight -> r
+    java.util.LinkedHashMap mMapID -> s
+    boolean mIsLnChart -> t
+    android.graphics.Paint mPaintLine -> u
+    org.xclcharts.renderer.plot.PlotLegendRender$EnumChartType mType -> v
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LegendType -> w
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$HorizontalAlign -> x
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$VerticalAlign -> y
+    float getLabelTextWidth(java.lang.String) -> a
+    float getLabelTextHeight() -> j
+    void renderLineKey(android.graphics.Canvas,java.util.List) -> a
+    void renderPointKey(android.graphics.Canvas,java.util.List) -> b
+    void render(android.graphics.Canvas) -> a
+    float getRectWidth() -> k
+    void refreshLst() -> l
+    void convertArrayLineKey(java.util.List) -> a
+    boolean isDrawKey(java.lang.String) -> b
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$LegendType() -> m
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$HorizontalAlign() -> n
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$VerticalAlign() -> o
+org.xclcharts.renderer.plot.PlotLegendRender$EnumChartType -> a.a.d.d.m:
+    org.xclcharts.renderer.plot.PlotLegendRender$EnumChartType AXIS -> a
+    org.xclcharts.renderer.plot.PlotLegendRender$EnumChartType CIR -> b
+    org.xclcharts.renderer.plot.PlotLegendRender$EnumChartType LN -> c
+    org.xclcharts.renderer.plot.PlotLegendRender$EnumChartType RD -> d
+org.xclcharts.renderer.plot.PlotQuadrant -> a.a.d.d.n:
+    int mFirstColor -> a
+    int mSecondColor -> b
+    int mThirdColor -> c
+    int mFourthColor -> d
+    boolean mShow -> h
+    boolean mShowBgColor -> e
+    boolean mShowVerticalLine -> f
+    boolean mShowHorizontalLine -> g
+    android.graphics.Paint mPaintBgColor -> i
+    android.graphics.Paint mPaintVerticalLine -> j
+    double mQuadrantXValue -> k
+    double mQuadrantYValue -> l
+org.xclcharts.renderer.plot.PlotQuadrantRender -> a.a.d.d.o:
+org.xclcharts.renderer.plot.PlotTitle -> a.a.d.d.p:
+    java.lang.String mChartTitle -> a
+    java.lang.String mSubtitle -> b
+    android.graphics.Paint mPaintTitle -> c
+    android.graphics.Paint mPaintSubtitle -> d
+    org.xclcharts.renderer.XEnum$HorizontalAlign mChartTitleAlign -> e
+    org.xclcharts.renderer.XEnum$VerticalAlign mTitlePosition -> f
+    void setTitle(java.lang.String) -> a
+    java.lang.String getTitle() -> a
+    java.lang.String getSubtitle() -> b
+    android.graphics.Paint getTitlePaint() -> c
+    android.graphics.Paint getSubtitlePaint() -> d
+    org.xclcharts.renderer.XEnum$HorizontalAlign getTitleAlign() -> e
+    org.xclcharts.renderer.XEnum$VerticalAlign getVerticalAlign() -> f
+org.xclcharts.renderer.plot.PlotTitleRender -> a.a.d.d.q:
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$VerticalAlign -> a
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$HorizontalAlign -> b
+    void renderTitle(float,float,float,float,float,android.graphics.Canvas) -> a
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$VerticalAlign() -> g
+    int[] $SWITCH_TABLE$org$xclcharts$renderer$XEnum$HorizontalAlign() -> h
+org.xclcharts.view.ChartView -> a.a.e.a:
+    java.util.List mTouch -> a
+    void render(android.graphics.Canvas) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void bindTouch$62cff3ca(org.xclcharts.renderer.XChart) -> a
+org.xclcharts.view.GraphicalView -> a.a.e.b:
+    java.lang.String TAG -> a
+    void initChartView() -> a
+    void render(android.graphics.Canvas) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void onMeasure(int,int) -> onMeasure

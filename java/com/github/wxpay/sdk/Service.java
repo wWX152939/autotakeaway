@@ -131,7 +131,7 @@ public class Service extends HttpServlet {
 			data.put("out_trade_no", timestamp + "");
 			data.put("device_info", device_info);
 			data.put("fee_type", "CNY");
-			data.put("total_fee", "1");
+			data.put("total_fee", totalPay + "");
 			data.put("spbill_create_ip", "123.12.12.123");
 			data.put("notify_url", "http://www.dewucanyin.com:8080/weixin/PayService");
 			data.put("sign_type", "MD5");
@@ -219,10 +219,16 @@ public class Service extends HttpServlet {
         	    result = HttpRequest.sendGet("https://api.weixin.qq.com/cgi-bin/user/info?access_token=" + MyListener.mToken + "&openid=" + openId + "&lang=zh_CN");
         	    System.out.println("user info result=" + result);
         	    jsonObject2 = new JSONObject(result);
-        	    String nickName = jsonObject2.getString("nickname");
+        	    String nickName = "";
+        	    try {
+        	    	nickName = jsonObject2.getString("nickname");
+        	    } catch (Exception e) {
+        	    	
+        	    }
 
         		
         	    String deviceInfo = "";
+        	    float total = 0;
     			for (int i = 0; i < payList.payList.size(); i++) {
     				
     				// 自己服务器先下单
@@ -236,6 +242,8 @@ public class Service extends HttpServlet {
     				jsonObject = new JSONObject(result);
     				int orderId = jsonObject.getInt("orderId");
     				deviceInfo += orderId + "#" + payList.payList.get(i).pay + "@";
+    				
+					total += Float.parseFloat(payList.payList.get(i).pay);
     			}
     			if (deviceInfo.isEmpty()) {
     				return;
@@ -244,7 +252,7 @@ public class Service extends HttpServlet {
 				System.out.println("addOrder deviceInfo=" + deviceInfo);
 //        	    String openId = "111111";
     	    	// 2.下单
-        	    Map<String, String> retPay = preparePay(openId, deviceInfo, 1);
+        	    Map<String, String> retPay = preparePay(openId, deviceInfo, (int)(total * 100));
         	    if (retPay != null) {
         	    	String sign = getSign(retPay.get("nonce_str"));
         	    	String paySign = getPaySign(retPay.get("nonce_str"), retPay.get("prepay_id"));

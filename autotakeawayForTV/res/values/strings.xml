@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">1喜呵呵未来餐厅</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="confirm">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="status_jd">经度</string>
+    <string name="status_wd_loc">纬度</string>
+    
+    
+    <string name="name">名称</string>
+    <string name="device_id">设备编号</string>
+    <string name="status">状态</string>
+
+    <string name="total">总数</string>
+    <string name="pay">金额</string>
+    <string name="pay_time">下单日期</string>
+    <string name="order_number">订单编号</string>
+    <string name="custom">顾客名称</string>
+    <string name="food_name">食品名称</string>
+    <string name="device_type">设备类型</string>
+    <string name="door_id">取餐编号</string>
+    <string name="is_food_exist">是否含有食物</string>
+    <string name="front_status">前门状态</string>
+    <string name="back_status">后门状态</string>
+    <string name="picture">图片</string>
+    
+    <string name="unfinished">未完成</string>
+    <string name="finished">已完成</string>
+    
+    <string name="cfj">炒饭机</string>
+    <string name="stj">售汤机</string>
+    <string name="pcg">配餐柜</string>
+
+</resources>
