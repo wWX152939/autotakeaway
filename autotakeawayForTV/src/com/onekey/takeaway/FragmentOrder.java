@@ -28,6 +28,9 @@ import com.ab.view.pullview.AbPullToRefreshView.OnFooterLoadListener;
 import com.ab.view.pullview.AbPullToRefreshView.OnHeaderRefreshListener;
 import com.onekey.common.Common;
 import com.onekey.http.CloudManager;
+import com.onekey.takeaway.bean.CabinetBean;
+import com.onekey.takeaway.bean.CabinetBean.DoorListBean;
+import com.onekey.takeaway.bean.CabinetBean.InnerCabinetBean;
 import com.onekey.takeaway.bean.DoorBean;
 import com.onekey.takeaway.bean.MsgBean;
 import com.onekey.takeaway.bean.OrderBean;
@@ -60,7 +63,7 @@ public class FragmentOrder extends Fragment {
 	void initData() {
 		List<InnerOrderBean> list = new ArrayList<InnerOrderBean>();
 		for (int i = 0; i < 10; i++) {
-			InnerOrderBean bean = new InnerOrderBean("张三", "西红柿蛋汤", "001", 5, "2018-09-06 17:22:06");
+			InnerOrderBean bean = new InnerOrderBean("张三", "西红柿蛋汤", "303031", "B0B0", 5, "2018-09-06 17:22:06");
 			list.add(bean);
 		}
 		mDataListAdapter.addShowDataList(list);
@@ -79,7 +82,10 @@ public class FragmentOrder extends Fragment {
 
 		@Override
 		public void run() {
-			LogUtils.d("ll1" + isHidden() + " mCurrentType=" + mCurrentType);
+			LogUtils.d("ll1" + isHidden() + " mCurrentType=" + mCurrentType + " act=" + getActivity());
+			if (getActivity() == null) {
+				return;
+			}
 
 			getActivity().runOnUiThread(new Runnable() {
 				
@@ -95,41 +101,111 @@ public class FragmentOrder extends Fragment {
 								LogUtils.i("ll1 mCurrentType:" + mCurrentType + " arg0=" + arg0 + " info.getErrorcode()=");
 								if (arg0 == CloudResponseStatus.Succ) {
 									OrderBean bean = (OrderBean) arg1;
-									if (bean.getOrderList() != null) {
-										List<InnerOrderBean> list = getOrderBeanList(bean.getOrderList());
-										LogUtils.d("ll1 list=" + list);
-										if (!bean.getOrderList().isEmpty()) {
-											if (mDataListAdapter.getDataShowList().isEmpty()) {
 
-												if (mCurrentType.equals(FragmentOperation.tab4)) {
-													playSoundScan();
-												}
-											} else {
-												if (bean.getOrderList().get(0).getOrderId() != mDataListAdapter.getDataShowList().get(0).getOrderId()) {
-													LogUtils.d("ll1 not equal");
-													if (mCurrentType.equals(FragmentOperation.tab4)) {
-														playSoundScan();
-													}
-												} else {
-													LogUtils.d("ll1 equal");
-												}
+									synchronized (this) {
+										
+										if (bean.getOrderList() != null) {
+											List<InnerOrderBean> list = getOrderBeanList(bean.getOrderList());
+											LogUtils.d("ll1 list=" + list);
+											if (!bean.getOrderList().isEmpty()) {
 												
+												mDataListAdapter.setDataList(list);
+												
+												requestCabinetList();
+												
+											} else {
+												mDataListAdapter.setDataList(null);
 											}
-											mDataListAdapter.setShowDataList(list);
-										} else {
-											mDataListAdapter.setShowDataList(null);
-										}
 //										mDataListAdapter.setDataList(bean.getOrderList());
+										}
 									}
 								} 
 								mAbPullToRefreshView.onHeaderRefreshFinish();
 							}
 						}, mCurrentDevType, "", mStatus);
+						
+						
 					}
 				}
 			});
 		}
 		
+	}
+	
+	private void requestCabinetList() {
+
+		CloudManager.getInstance().requestCabinetList(new CloudInterface() {
+
+			@Override
+			public void cloudCallback(CloudResponseStatus arg0,
+					Object arg1) {
+				if (arg0 == CloudResponseStatus.Succ) {
+					CabinetBean bean = (CabinetBean) arg1;
+					LogUtils.d("ll1 bean=" + bean);
+					if (bean != null && bean.getDevicelist() != null && !bean.getDevicelist().isEmpty()) {
+						synchronized (this) {
+						try {
+								
+							for (InnerOrderBean item : mDataListAdapter.getDataList()) {
+								LogUtils.d("ll1 item.getDevId()=" + item.getDevId() + " item.getDoorId()=" + item.getDoorId());
+								if (item.getDevId() != null && item.getDoorId() != null) {
+									for (InnerCabinetBean deviceItem : bean.getDevicelist()) {
+										LogUtils.d("ll1 item.getDevId()=" + item.getDevId() + " deviceItem.getDeviceID()=" + deviceItem.getDeviceID());
+										if (item.getDevId().equals(deviceItem.getDeviceID()) && deviceItem.getSlots() != null) {
+											for (DoorListBean doorItem : deviceItem.getSlots()) {
+												LogUtils.d("ll1 doorItem.getDoorCode()=" + doorItem.getDoorCode() + " item.getDoorId()=" + item.getDoorId());
+												if (doorItem.getDoorCode().equals(item.getDoorId())) {
+													LogUtils.d("ll1 ===================set================");
+													item.setBackDoorClose(doorItem.getBackDoor().equals("0"));
+													item.setContainFood(doorItem.getContainFood().equals("0"));
+													break;
+												}
+											}
+										}
+									}
+								}
+							}
+							
+							if (!mDataListAdapter.getDataList().isEmpty()) {
+								
+								if (mDataListAdapter.getDataShowList().isEmpty()) {
+									
+									if (mCurrentType.equals(FragmentOperation.tab4)) {
+										playSoundScan();
+									}
+								} else {
+									if (mDataListAdapter.getDataList().get(0).getOrderId() != mDataListAdapter.getDataShowList().get(0).getOrderId()) {
+										LogUtils.d("ll1 not equal");
+										if (mCurrentType.equals(FragmentOperation.tab4)) {
+											playSoundScan();
+										}
+									} else {
+										LogUtils.d("ll1 equal");
+									}
+									
+								}
+							}
+							
+							// remove
+							List<InnerOrderBean> newList = new ArrayList<InnerOrderBean>();
+							for (InnerOrderBean item : mDataListAdapter.getDataList()) {
+								if (item.isBackDoorClose() && item.isContainFood()) {
+									newList.add(item);
+								}
+							}
+							if (!newList.isEmpty()) {
+								mDataListAdapter.setShowDataList(newList);
+							}
+							
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+						}
+					}
+				}
+			}
+			
+		});
 	}
 	
 	public void refreshData() {
@@ -255,7 +331,7 @@ public class FragmentOrder extends Fragment {
 			view = inflater
 					.inflate(R.layout.fragment_order, container, false);
 		}
-		TextView tv = (TextView)view.findViewById(R.id.tv1);
+		TextView tv = (TextView)view.findViewById(R.id.tv4);
 		tv.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -510,9 +586,15 @@ public class FragmentOrder extends Fragment {
 	
 	void playSoundScan() {
 		if (isFinishedLoad) {
-			soundPool.play(soundID, 0.6f, 0.6f, 0, 0, 1);
+			soundPool.play(soundID, 0.9f, 0.9f, 0, 0, 1);
 		}
 		
 		LogUtils.i("ll1 soundID=" + soundID + " isFinishedLoad=" + isFinishedLoad);
+	}
+
+    public void onDestroy() {
+		super.onDestroy();
+		mTimer.cancel();
+		LogUtils.i("ll1 onDestroy");
 	}
 }

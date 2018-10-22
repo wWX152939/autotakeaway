@@ -20,7 +20,10 @@ import com.onekey.takeaway.bean.LoginBean;
 import com.onekey.takeaway.bean.ModifyCabinetBean;
 import com.onekey.takeaway.bean.ModifyDevBean;
 import com.onekey.takeaway.bean.ModifyDeviceFoodBean;
+import com.onekey.takeaway.bean.CabinetBean.DoorListBean;
+import com.onekey.takeaway.bean.CabinetBean.InnerCabinetBean;
 import com.onekey.takeaway.bean.ModifyDeviceFoodBean.InnerModifyDeviceFoodBean;
+import com.onekey.takeaway.bean.OrderBean.InnerOrderBean;
 import com.onekey.takeaway.bean.ModifyFoodBean;
 import com.onekey.takeaway.bean.MsgBean;
 import com.onekey.takeaway.bean.OrderBean;
@@ -308,6 +311,26 @@ public class CloudManager {
 	}
 	
 	public void requestCabinetList(final CloudInterface cloudInterface) {
+			
+//		CabinetBean info = new CabinetBean();
+//		List<InnerCabinetBean> devicelist = new ArrayList<InnerCabinetBean>();
+//		InnerCabinetBean object = new InnerCabinetBean();
+//		object.setDeviceID("B0B0B0B0B0B0B0B0B0B0B0B0");
+//		List<DoorListBean> doorList = new ArrayList<DoorListBean>();
+//		DoorListBean doorObj = new DoorListBean();
+//		doorObj.setBackDoor("0");
+//		doorObj.setContainFood("0");
+//		doorObj.setDoorCode("303031");
+//		doorList.add(doorObj);
+//		object.setSlots(doorList);
+//		devicelist.add(object);
+//		info.setDevicelist(devicelist);
+//		cloudInterface.cloudCallback(CloudResponseStatus.Succ, info);
+//		
+//		if (true) {
+//			return;
+//		}
+		
 		if (mShopBean == null) {
 			cloudInterface.cloudCallback(CloudResponseStatus.Failed, null);
 			return;
@@ -558,6 +581,26 @@ public class CloudManager {
 	
 
 	public void requestUnTakenOrderList(final CloudInterface cloudInterface, int devType, String orderId, String orderState) {
+//		OrderBean info = new OrderBean();
+//		List<InnerOrderBean> list = new ArrayList<InnerOrderBean>();
+//		for (int i = 0; i < 10; i++) {
+//			if (i == 0) {
+//
+//				InnerOrderBean bean = new InnerOrderBean("张三", "西红柿蛋汤", "303032", "B0B0B0B0B0B0B0B0B0B0B0B0", 5, "2018-09-06 17:22:06");
+//				list.add(bean);
+//			} else {
+//				
+//				InnerOrderBean bean = new InnerOrderBean("张三", "西红柿蛋汤", "303031", "B0B0B0B0B0B0B0B0B0B0B0B0", 5, "2018-09-06 17:22:06");
+//				list.add(bean);
+//			}
+//		}
+//		info.setOrderList(list);
+//		cloudInterface.cloudCallback(CloudResponseStatus.Succ, info);
+//		if (true) {
+//			return;
+//		}
+		
+		
 		if (mShopBean == null) {
 			cloudInterface.cloudCallback(CloudResponseStatus.Failed, null);
 			return;

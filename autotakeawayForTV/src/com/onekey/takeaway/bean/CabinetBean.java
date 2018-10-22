@@ -68,9 +68,18 @@ public class CabinetBean extends MsgBean{
 	
 	public static class DoorListBean {
 
+		/**
+		 * 0 no 1 has
+		 */
 		String containFood;
 		String doorCode;
+		/**
+		 * 0 no 1 has
+		 */
 		String backDoor;
+		/**
+		 * 0 no 1 has
+		 */
 		String frontDoor;
 		public String getContainFood() {
 			return containFood;

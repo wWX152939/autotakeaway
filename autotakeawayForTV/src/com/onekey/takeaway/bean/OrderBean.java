@@ -43,6 +43,11 @@ public class OrderBean extends MsgBean{
 		int orderId;
 		String genTime;
 		String userId;
+		
+		boolean backDoorClose;
+		boolean containFood;
+		
+		
 //		"devType":1,
 //		"devId":null,
 //		"foodName":"蛋炒饭",
@@ -52,9 +57,25 @@ public class OrderBean extends MsgBean{
 //		"pay":"100.0","state":2,
 //		"genTime":"2018-09-0522:17:56",
 //		"doorId":null
-		
+
 		public String getGenTime() {
 			return genTime;
+		}
+
+		public boolean isBackDoorClose() {
+			return backDoorClose;
+		}
+
+		public void setBackDoorClose(boolean backDoorClose) {
+			this.backDoorClose = backDoorClose;
+		}
+
+		public boolean isContainFood() {
+			return containFood;
+		}
+
+		public void setContainFood(boolean containFood) {
+			this.containFood = containFood;
 		}
 
 		public void setGenTime(String genTime) {
@@ -95,10 +116,11 @@ public class OrderBean extends MsgBean{
 		}
 				
 		public InnerOrderBean(String custom, String food,
-				String doorId, int state,  String genTime) {
+				String doorId, String devId, int state,  String genTime) {
 			super();
 			this.custom = custom;
 			this.doorId = doorId;
+			this.devId = devId;
 			this.state = state;
 			this.foodName = food;
 			this.genTime = genTime;
@@ -221,7 +243,9 @@ public class OrderBean extends MsgBean{
 					+ ", doorId=" + doorId + ", state=" + state + ", foodName="
 					+ foodName + ", foodId=" + foodId + ", pay=" + pay
 					+ ", devId=" + devId + ", orderId=" + orderId
-					+ ", genTime=" + genTime + ", userId=" + userId + "]";
+					+ ", genTime=" + genTime + ", userId=" + userId
+					+ ", backDoorClose=" + backDoorClose + ", containFood="
+					+ containFood + "]";
 		}
 
 		
