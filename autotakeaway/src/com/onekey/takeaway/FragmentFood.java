@@ -138,12 +138,12 @@ public class FragmentFood extends Fragment {
 									
 									@Override
 									public void cloudCallback(CloudResponseStatus arg0, Object arg1) {
-										if (arg0 == CloudResponseStatus.Succ) {
+//										if (arg0 == CloudResponseStatus.Succ) {
 //											bean.setTotal(EditText.getText().toString());
-											holder.tvs[2].setText(EditText.getText().toString());
+											holder.tvs[1].setText(EditText.getText().toString());
 											int num = Integer.parseInt(EditText.getText().toString());
 											mDataListAdapter.getItem(position).setStock(num);
-										}
+//										}
 									}
 								}, bean.getFoodId(), type, number);
 							}

@@ -41,7 +41,8 @@ public class CloudManager {
 	private final String URL_CLOUD_PAD = "http://140.143.161.135:8080/auto-sell-web/pad";
 	private final String URL_login = URL_CLOUD_PAD + "/login/login.do";
 	private final String URL_request_info = URL_CLOUD_PAD + "/shop/orderList.do";
-	private final String URL_modify_food = URL_CLOUD_PAD + "/shop/modifyFood.do";
+//	private final String URL_modify_food = URL_CLOUD_PAD + "/shop/modifyFood.do";
+	private final String URL_modify_food = URL_CLOUD_PAD + "/slot/modifyManmadeStock.do";
 	private final String URL_request_shop_devices = URL_CLOUD_PAD + "/dev/list.do";
 	private final String URL_modify_device_status = URL_CLOUD_PAD + "/dev/modifystatus.do";
 	private final String URL_request_order_list = URL_CLOUD_PAD + "/shop/requestOrdersByState.do";
